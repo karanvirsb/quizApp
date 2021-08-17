@@ -3,3 +3,9 @@
     place-items: center;
     width: 100%;
 }
+
+.selection__form{
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; 
+}
