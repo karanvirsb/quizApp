@@ -1,5 +1,6 @@
 :root{
     --header-bgDark: hsl(215, 41%, 15%);
+    --links-hover-bg: hsl(246, 12%, 56%);
 }
 .header{
     height: min(15vh, 75px);
@@ -36,9 +37,14 @@
 
 .nav__links a{
     color: white; 
+    font-size: clamp(1.1rem, 1vw, 1.2rem);
     margin: 0rem 0.5rem;
     padding: 0.75rem;
     text-decoration: none; 
+}
+
+.nav__links a:hover{
+    background: var(--links-hover-bg);
 }
 
 .header__account{
