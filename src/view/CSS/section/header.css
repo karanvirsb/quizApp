@@ -2,8 +2,8 @@
     --header-bgDark: hsl(215, 41%, 15%);
 }
 .header{
-    width: 100%; 
     height: min(15vh, 75px);
+    width: 100%; 
 }
 
 .header--dark{
@@ -16,8 +16,8 @@
 }
 
 .header__logo a{
-    text-decoration: none;
     color: white; 
+    text-decoration: none;
 }
 
 .nav__links a{
