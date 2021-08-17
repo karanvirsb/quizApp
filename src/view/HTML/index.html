@@ -8,6 +8,7 @@
     <!-- links -->
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/section/header.css">
+    <link rel="stylesheet" href="../CSS/section/selection.css">
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/267e7db5be.js" crossorigin="anonymous"></script>
 </head>
@@ -33,7 +34,7 @@
         </div>
     </header>
 
-    <section class="selection">
+    <section class="selection grid">
         <form class="selection__form grid" action="">
             <label id="num_of_questions" for="number_of_questions__input">
                 <p class="number_of_questions__label selection__labels">Number of Questions</p>
@@ -51,8 +52,8 @@
                 <p class="type__label selection__labels">Type</p>
                 <input id="type__input" type="text">
             </label>
+            <input id="form_submit" class="selection__btn" type="submit" value="Begin">
         </form>
-        <button id="form_submit" class="selection__btn">Begin</button>
     </section>
 </body>
 </html>
