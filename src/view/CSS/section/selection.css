@@ -2,13 +2,19 @@
     margin: 1rem 5rem;
 }
 
-.selection__form{
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.selection__container{
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: 1fr; 
-    gap: 2rem; 
+    gap: 1.5rem; 
 }
 
 .selection__labels{
     color: white; 
     font-size: clamp(1rem, 3vw, 1.4rem);
+}
+
+.selection__input{
+    height: 40px;
+    width: 250px; 
 }
