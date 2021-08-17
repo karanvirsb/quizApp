@@ -43,5 +43,8 @@
 
 .fa-user{
     background: white;
+    border-radius: 50%;
     color: var(--header-bgDark); 
+    height: 50px;
+    width: 50px;
 }
