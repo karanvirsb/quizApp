@@ -3,7 +3,8 @@
 }
 .header{
     height: min(15vh, 75px);
-    width: 100%; 
+    padding: 0rem 2rem; 
+    width: 100%;
 }
 
 .header--dark{
