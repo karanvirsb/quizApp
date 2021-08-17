@@ -35,3 +35,7 @@ body{
 .f-ac{
     align-items: center;
 }
+
+.grid{
+    display: grid; 
+}
