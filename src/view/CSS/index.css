@@ -4,3 +4,22 @@
     margin: 0px; 
 }
 
+.flex{
+    display: flex; 
+}
+
+.f-c{
+    flex-direction: column;
+}
+
+.f-jc{
+    justify-content: center;
+}
+
+.f-sb{
+    justify-content: space-between;
+}
+
+.f-ac{
+    align-items: center;
+}
