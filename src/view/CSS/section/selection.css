@@ -1,12 +1,14 @@
 .selection{
-    margin: 1rem 5rem;
+    margin: 10rem 5rem;
     width: 100%;
+    position: relative;
 }
 
 .selection__container{
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem; 
+    margin-bottom: 3rem;
 }
 
 .selection__labels{
