@@ -17,3 +17,7 @@
     height: 40px;
     width: 250px; 
 }
+
+.selection__input:focus{
+    outline: none;
+}
