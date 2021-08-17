@@ -20,6 +20,10 @@
     justify-content: space-between;
 }
 
+.f-se{
+    justify-content: space-evenly;
+}
+
 .f-ac{
     align-items: center;
 }
