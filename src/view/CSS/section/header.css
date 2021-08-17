@@ -24,13 +24,13 @@
 .header__menu{
     background: white;
     height: 30px;
-    width: 30px;
+    width: 35px;
 }
 
 .menu__bar{
     background: black;
     height: 5px;
-    width: 25px;
+    width: 27px;
 }
 
 .nav__links a{
