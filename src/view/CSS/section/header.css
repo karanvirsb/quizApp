@@ -51,3 +51,5 @@
 .fa-user{
     color: var(--header-bgDark); 
 }
+
+/* TODO create media query for smaller screens */
