@@ -21,6 +21,12 @@
     text-decoration: none;
 }
 
+.header__menu{
+    height: 30px;
+    width: 30px;
+    background: white;
+}
+
 .nav__links a{
     color: white; 
     margin: 0rem 0.5rem;
