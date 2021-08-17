@@ -41,10 +41,13 @@
     text-decoration: none; 
 }
 
-.fa-user{
+.header__account{
     background: white;
     border-radius: 50%;
-    color: var(--header-bgDark); 
     height: 50px;
     width: 50px;
+}
+
+.fa-user{
+    color: var(--header-bgDark); 
 }
