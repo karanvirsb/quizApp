@@ -1,11 +1,9 @@
 .selection{
-    height: max(200px, 30vh); 
-    place-items: center;
-    width: 100%;
+    margin: 1rem 5rem;
 }
 
 .selection__form{
-    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr; 
     gap: 2rem; 
 }
