@@ -22,6 +22,7 @@
 }
 
 .header__menu{
+    display: none;
     background: white;
     height: 30px;
     width: 35px;
