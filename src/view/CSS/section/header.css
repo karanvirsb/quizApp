@@ -1,0 +1,21 @@
+:root{
+    --header-bgDark: hsl(215, 41%, 15%);
+}
+.header{
+    width: 100%; 
+    height: min(15vh, 75px);
+}
+
+.header--dark{
+    background: var(--header-bgDark);
+    color: white; 
+}
+
+.header__logo{
+    padding-right: 1rem; 
+}
+
+.header__logo a{
+    text-decoration: none;
+    color: white; 
+}
