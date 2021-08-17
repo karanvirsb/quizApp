@@ -1,7 +1,15 @@
+:root{
+  --body-bg: hsl(214, 32%, 20%);
+}
+
 *, ::before, ::after{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px; 
+}
+
+body{
+    background: var(--body-bg);
 }
 
 .flex{
