@@ -1,6 +1,7 @@
 #form_submit{
     background: hsl(148, 62%, 64%);
     border: none; 
+    border-radius: 5px;
     font-size: clamp(1rem, 1vw, 1.5rem);
     height: 40px;
     left: 50%; 
