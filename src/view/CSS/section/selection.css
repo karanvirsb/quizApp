@@ -1,0 +1,5 @@
+.selection{
+    height: max(200px, 30vh); 
+    place-items: center;
+    width: 100%;
+}
