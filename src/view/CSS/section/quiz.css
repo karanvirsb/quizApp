@@ -17,3 +17,8 @@
     min-height: 400px;
     width: 100%;
 }
+
+.quiz__body--header{
+    color: white; 
+    font-size: clamp(1.2rem, 3vw, 1.85rem);
+}
