@@ -11,6 +11,10 @@
     outline: 1px solid black;
 }
 
+.explore__header{
+    margin-bottom: 1rem;
+}
+
 .explore__header a{
     color: white; 
     text-decoration: none;
