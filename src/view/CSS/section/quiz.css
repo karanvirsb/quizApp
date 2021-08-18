@@ -3,7 +3,7 @@
 }
 .quiz__header{
     /* background: hsl(246, 17%, 30%); */
-    height: min(100px, 10vh); 
+    height: min(100px, 20vh); 
     width: 100%;
     outline: 1px solid black;
 }
@@ -14,6 +14,6 @@
 }
 
 .quiz__body{
-    height: min(400px, 40vh); 
+    min-height: 400px;
     width: 100%;
 }
