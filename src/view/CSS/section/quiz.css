@@ -28,3 +28,9 @@
     color: white; 
     font-size: clamp(1.35rem, 3vw, 2rem);
 }
+
+.quiz__body--container{
+    height: 200px;
+    outline: 1px solid black;
+    width: 100%;
+}
