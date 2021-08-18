@@ -10,14 +10,17 @@
 }
 
 .explore__container{
+    height: 100px;
     position: relative;
     outline: 1px solid gray; 
 }
 
 .explore__back{
+    height: inherit;
     position: absolute;
 }
 
 .explore__forward{
+    height: inherit;
     position: absolute;
 }
