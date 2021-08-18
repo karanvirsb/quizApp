@@ -8,5 +8,5 @@
 
 .quiz__header p{
     color: white; 
-    font-size: clamp(1.35rem, 3vw, 2.5rem);
+    font-size: clamp(1.35rem, 3vw, 2rem);
 }
