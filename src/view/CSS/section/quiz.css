@@ -1,5 +1,7 @@
+.quiz{
+    margin: 2rem 0rem;
+}
 .quiz__header{
-    margin-top: 2rem;
     height: min(100px, 10vh); 
     width: 100%;
 }
