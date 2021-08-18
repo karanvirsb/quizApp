@@ -5,6 +5,7 @@
     /* background: hsl(246, 17%, 30%); */
     height: min(100px, 10vh); 
     width: 100%;
+    outline: 1px solid black;
 }
 
 .quiz__header p{
