@@ -30,6 +30,7 @@
 .explore__back{
     background: var(--btn-bg);
     border-radius: 5px;    
+    cursor: pointer;
     font-size: var(--btn-font);
     width: var(--btn-width);
     height: inherit;
@@ -40,6 +41,7 @@
 .explore__forward{
     background: var(--btn-bg);
     border-radius: 5px;
+    cursor: pointer;
     font-size: var(--btn-font);    
     width: var(--btn-width);
     height: inherit;
@@ -50,6 +52,7 @@
 .explore__item{
     background: hsl(5, 95%, 77%);
     border-radius: 5px; 
+    cursor: pointer;
     flex-shrink: 0;
     height: inherit;
     margin-right: 0.5rem;  
