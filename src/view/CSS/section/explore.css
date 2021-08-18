@@ -2,7 +2,6 @@
     --btn-bg: white; 
     --btn-font: 30px; 
     --btn-width: 30px; 
-
 }
 
 .explore{
@@ -22,7 +21,7 @@
 
 .explore__container{
     height: 150px;
-    padding: 0rem 0rem 0rem 3em; 
+    padding: 0rem 0rem 0rem 2.4rem; 
     position: relative;
     outline: 1px solid gray; 
 }
@@ -43,4 +42,12 @@
     height: inherit;
     right: 0%;
     position: absolute;
+}
+
+.explore__item{
+    background: hsl(5, 95%, 77%);
+    height: inherit;
+    margin-right: 1rem;  
+    padding: 1rem; 
+    width: 150px; 
 }
