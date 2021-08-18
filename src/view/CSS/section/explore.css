@@ -22,6 +22,7 @@
 
 .explore__container{
     height: 150px;
+    padding: 0rem 0rem 0rem 3em; 
     position: relative;
     outline: 1px solid gray; 
 }
