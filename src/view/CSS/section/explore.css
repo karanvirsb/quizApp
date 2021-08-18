@@ -1,5 +1,8 @@
 :root{
+    --btn-bg: white; 
+    --btn-font: 30px; 
     --btn-width: 30px; 
+
 }
 
 .explore{
@@ -20,7 +23,8 @@
 }
 
 .explore__back{
-    background: white;
+    background: var(--btn-bg);
+    font-size: var(--btn-font);
     width: var(--btn-width);
     height: inherit;
     left: 0%; 
@@ -28,7 +32,8 @@
 }
 
 .explore__forward{
-    background: white;
+    background: var(--btn-bg);
+    font-size: var(--btn-font);    
     width: var(--btn-width);
     height: inherit;
     right: 0%;
