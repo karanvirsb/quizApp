@@ -8,3 +8,16 @@
     color: white; 
     text-decoration: none;
 }
+
+.explore__container{
+    position: relative;
+    outline: 1px solid gray; 
+}
+
+.explore__back{
+    position: absolute;
+}
+
+.explore__forward{
+    position: absolute;
+}
