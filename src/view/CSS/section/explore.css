@@ -6,7 +6,7 @@
 
 .explore{
     height: 200px;
-    margin: 0rem 1.5rem; 
+    margin-inline: min(7vw, 15rem); 
     /* outline: 1px solid black; */
 }
 
