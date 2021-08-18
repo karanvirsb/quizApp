@@ -1,4 +1,10 @@
 .quiz__header{
-    height: min(65px, 10vh); 
+    margin-top: 2rem;
+    height: min(100px, 10vh); 
     width: 100%;
+}
+
+.quiz__header p{
+    color: white; 
+    font-size: clamp(1.35rem, 3vw, 2.5rem);
 }
