@@ -39,6 +39,10 @@
     position: absolute;
 }
 
+.explore__back:hover{
+    background: hsl(0, 0%, 85%);
+}
+
 .explore__forward{
     background: var(--btn-bg);
     border-radius: 5px;
@@ -48,6 +52,10 @@
     height: inherit;
     right: 0%;
     position: absolute;
+}
+
+.explore__forward:hover{
+    background: hsl(0, 0%, 85%);
 }
 
 .explore__item{
