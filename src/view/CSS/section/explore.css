@@ -1,3 +1,7 @@
+:root{
+    --btn-width: 30px; 
+}
+
 .explore{
     height: 200px;
     margin: 0rem 1.5rem; 
@@ -10,17 +14,23 @@
 }
 
 .explore__container{
-    height: 100px;
+    height: 150px;
     position: relative;
     outline: 1px solid gray; 
 }
 
 .explore__back{
+    background: white;
+    width: var(--btn-width);
     height: inherit;
+    left: 0%; 
     position: absolute;
 }
 
 .explore__forward{
+    background: white;
+    width: var(--btn-width);
     height: inherit;
+    right: 0%;
     position: absolute;
 }
