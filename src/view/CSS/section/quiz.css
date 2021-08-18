@@ -1,0 +1,4 @@
+.quiz__header{
+    height: min(65px, 10vh); 
+    width: 100%;
+}
