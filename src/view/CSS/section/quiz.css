@@ -14,11 +14,17 @@
 }
 
 .quiz__body{
+    margin: 2rem 0rem;
     min-height: 400px;
     width: 100%;
 }
 
 .quiz__body--header{
+    height: 100px;
+    width: 100%; 
+    outline: 1px solid black;
+}
+.quiz__body--header p{
     color: white; 
     font-size: clamp(1.35rem, 3vw, 2rem);
 }
