@@ -3,3 +3,8 @@
     margin: 0rem 1.5rem; 
     outline: 1px solid black;
 }
+
+.explore__header a{
+    color: white; 
+    text-decoration: none;
+}
