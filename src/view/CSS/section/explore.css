@@ -20,11 +20,12 @@
 }
 
 .explore__container{
+    background: hsl(215, 41%, 15%);
     height: 150px;
-    padding: 0rem 0rem 0rem 2.4rem; 
+    padding: 1rem 0rem 10rem 2.4rem; 
     position: relative;
     /* outline: 1px solid gray;  */
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .explore__back{
