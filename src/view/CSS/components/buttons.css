@@ -14,3 +14,10 @@
 #form_submit:hover{
     background: hsl(148, 72%, 44%);
 }
+
+/* Display quiz html buttons */
+
+#next_question_btn{
+    height: 30px;
+    width: 100px;
+}
