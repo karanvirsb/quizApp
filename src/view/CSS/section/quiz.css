@@ -30,7 +30,13 @@
 }
 
 .quiz__body--container{
-    height: 200px;
     outline: 1px solid black;
     width: 100%;
+}
+
+.options{
+    color: white; 
+    margin: 1rem 0.75rem; 
+    padding: 1rem; 
+    outline: 1px solid white;
 }
