@@ -2,7 +2,7 @@
     margin: 4rem 0rem;
 }
 .quiz__header{
-    background: hsl(246, 12%, 40%);
+    /* background: hsl(246, 17%, 30%); */
     height: min(100px, 10vh); 
     width: 100%;
 }
