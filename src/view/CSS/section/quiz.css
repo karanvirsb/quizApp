@@ -1,5 +1,6 @@
 .quiz{
     margin: 4rem 0rem;
+    width: 100%;
 }
 .quiz__header{
     /* background: hsl(246, 17%, 30%); */
