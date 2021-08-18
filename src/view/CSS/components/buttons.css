@@ -16,8 +16,10 @@
 }
 
 /* Display quiz html buttons */
-
+/* todo add bg color to button */
 #next_question_btn{
+    position: relative;
+    left: 75%;  
     height: 30px;
     width: 100px;
 }
