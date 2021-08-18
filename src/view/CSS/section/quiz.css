@@ -42,3 +42,7 @@
     padding: 1rem; 
     outline: 1px solid white;
 }
+
+.options:last-of-type{
+    margin-bottom: 4rem;
+}
