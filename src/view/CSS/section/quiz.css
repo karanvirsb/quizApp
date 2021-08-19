@@ -22,9 +22,10 @@
 }
 
 .quiz__body--header{
+    border-radius: 5px 5px 0px 0px;
     height: 100px;
     width: 100%; 
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 .quiz__body--header p{
     color: white; 
@@ -32,11 +33,13 @@
 }
 
 .quiz__body--container{
-    outline: 1px solid black;
+    border-radius: 0px 0px 5px 5px;
+    /* outline: 1px solid black; */
     width: 100%;
 }
 
 .options{
+    border-radius: 5px;
     color: white; 
     margin: 1rem 0.75rem; 
     padding: 1rem; 
