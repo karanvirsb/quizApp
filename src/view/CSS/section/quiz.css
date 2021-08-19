@@ -36,8 +36,10 @@
 }
 
 .quiz__body--container{
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;  
     border-radius: 0px 0px 5px 5px;
-    outline: 1px solid black;
     width: 100%;
 }
 
