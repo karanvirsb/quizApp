@@ -21,10 +21,8 @@
 }
 
 .quiz__body--header{
-    background: #DCF7DD;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;  
+    background: hsl(122, 60%, 85%);
+    border: 1px solid black; 
     border-radius: 5px 5px 0px 0px;
     min-height: 100px;
     width: 100%; 
@@ -36,6 +34,7 @@
 }
 
 .quiz__body--container{
+    background: hsl(122, 63%, 92%);
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;  
