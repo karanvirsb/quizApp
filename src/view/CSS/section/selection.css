@@ -20,9 +20,14 @@
     border-radius: 5px;
     border: none; 
     color: white; 
+    cursor: pointer;
     font-size: clamp(1.1rem, 1vw, 2rem);
     height: 40px;
     width: 250px; 
+}
+
+.selection__input:hover{
+    background: hsl(215, 41%, 20%);
 }
 
 .selection__input:focus{
