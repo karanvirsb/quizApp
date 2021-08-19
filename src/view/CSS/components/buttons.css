@@ -22,7 +22,7 @@
 /* Display quiz html buttons */
 /* todo add bg color to button */
 #next_question_btn{
-    background: #86bbd8;
+    background: hsl(201, 51%, 69%);
     border: none; 
     border-radius: 5px;
     bottom: 2%;
@@ -34,9 +34,13 @@
     width: 100px;
 }
 
+#next_question_btn:hover{
+    background: hsl(201, 51%, 60%);
+}
+
 /* todo add bg color */
 #quit_quiz_btn{
-    background: #403d39;
+    background: hsl(34, 6%, 24%);
     border: none; 
     border-radius: 5px;
     color: white;
@@ -47,4 +51,8 @@
     right: 125px;
     text-transform: uppercase;
     width: 100px;
+}
+
+#quit_quiz_btn:hover{
+    background: hsl(34, 6%, 30%);
 }
