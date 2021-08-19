@@ -33,6 +33,8 @@
 
 /* todo add bg color */
 #quit_quiz_btn{
+    background: #403d39;
+    color: white;
     bottom: 2%;
     font-weight: bold;
     height: 30px;
