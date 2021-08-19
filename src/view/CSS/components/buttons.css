@@ -19,6 +19,7 @@
 /* todo add bg color to button */
 #next_question_btn{
     bottom: 2%;
+    font-weight: bold;
     height: 30px;
     position: absolute;
     right: 0.75rem;  
@@ -29,6 +30,7 @@
 /* todo add bg color */
 #quit_quiz_btn{
     bottom: 2%;
+    font-weight: bold;
     height: 30px;
     position: absolute;
     right: 125px;
