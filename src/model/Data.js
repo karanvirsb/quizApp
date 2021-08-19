@@ -1,21 +1,15 @@
 const url = "https://opentdb.com/api.php?"; 
 
-const getData = async (amount, category, type, difficulty) =>{
+const getData = async (amount = '', category = '', type = "", difficulty = "") =>{
     try {
-        const quiz = await getQuiz(amount); 
-        return quiz;
+        const resp = await fetch(url + 'amount=' + amount + '&category=' + category + '&difficulty=' + difficulty +  '&type=' + type); 
+        const quizJson = await resp.json();
+        return quizJson; 
     } catch (error) {
         console.log(error); 
     }
 }
 
-function getQuiz(amount, category, type, difficulty){
-    const resp = fetch(url + 'amount=' + amount);
-    return new Promise((resolve, reject) => {
-        if(resp){
-            return resolve(resp.json)
-        } else {
-            reject(`Sorry no quiz is available`); 
-        }
-    })
-}
+// console.log(getData(10).then((data)=>{
+//     console.log(data.results[3])
+// }).catch((err) => console.log(err))); 
