@@ -22,6 +22,7 @@
 /* Display quiz html buttons */
 /* todo add bg color to button */
 #next_question_btn{
+    background: #86bbd8;
     bottom: 2%;
     font-weight: bold;
     height: 30px;
