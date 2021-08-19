@@ -11,11 +11,13 @@
 }
 
 .selection__labels{
-    color: white; 
+    color: black; 
     font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
 .selection__input{
+    background: hsl(215, 41%, 15%);
+    color: white; 
     height: 40px;
     width: 250px; 
 }
