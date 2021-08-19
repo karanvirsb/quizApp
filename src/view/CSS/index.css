@@ -11,7 +11,7 @@
 }
 
 body{
-    background: var(--body-bg);
+    /* background: var(--body-bg); */
     font-family: 'Roboto', monospace, sans-serif;
 }
 
