@@ -18,6 +18,7 @@
 .selection__input{
     background: hsl(215, 41%, 15%);
     color: white; 
+    font-size: clamp(1.1rem, 1vw, 2rem);
     height: 40px;
     width: 250px; 
 }
