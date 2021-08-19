@@ -1,5 +1,5 @@
 .quiz{
-    width: 100%;
+    width: 100%; 
 }
 .quiz__header{
     /* background: hsl(246, 17%, 30%); */
@@ -23,7 +23,7 @@
 
 .quiz__body--header{
     border-radius: 5px 5px 0px 0px;
-    height: 100px;
+    min-height: 100px;
     width: 100%; 
     /* outline: 1px solid black; */
 }
