@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 :root{
   --body-bg: hsl(214, 32%, 20%);
 }
@@ -10,6 +12,7 @@
 
 body{
     background: var(--body-bg);
+    font-family: 'Roboto', monospace, sans-serif;
 }
 
 .flex{
