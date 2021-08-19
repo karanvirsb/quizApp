@@ -4,13 +4,13 @@
 .quiz__header{
     /* background: hsl(246, 17%, 30%); */
     border-bottom: 2px solid black;
-    min-height: 100px;  
+    min-height: min(100px, 10vh);  
     width: 100%;
 }
 
 .quiz__header p{
     color: white; 
-    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
 }
 
 .quiz__body{
@@ -29,7 +29,7 @@
 }
 .quiz__body--header p{
     color: white; 
-    font-size: clamp(1.35rem, 3vw, 2rem);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
 .quiz__body--container{
