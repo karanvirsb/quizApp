@@ -9,7 +9,7 @@
 }
 
 .quiz__header p{
-    color: white; 
+    color: black; 
     font-size: clamp(1.35rem, 2.5vw, 1.75rem);
 }
 
@@ -28,7 +28,7 @@
     /* outline: 1px solid black; */
 }
 .quiz__body--header p{
-    color: white; 
+    color: black; 
     font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
@@ -40,10 +40,10 @@
 
 .options{
     border-radius: 5px;
-    color: white; 
+    color: black; 
     margin: 1rem 0.75rem; 
     padding: 1rem; 
-    outline: 1px solid white;
+    outline: 1px solid black;
 }
 
 .options:last-of-type{
