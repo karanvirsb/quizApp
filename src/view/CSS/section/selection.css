@@ -1,6 +1,8 @@
 .selection{
-    background: hsl(50, 100%, 71%);
-    margin: 10rem 5rem;
+    background: #98C1D9;
+    min-height: 75vh;
+    margin-bottom: 5rem;
+    padding: 10rem 5rem;
     position: relative;
 }
 
@@ -17,10 +19,10 @@
 }
 
 .selection__input{
-    background: hsl(215, 41%, 15%);
+    background: hsl(212, 14%, 19%);
     border-radius: 5px;
     border: none; 
-    color: white; 
+    color: hsl(120, 100%, 98%); 
     cursor: pointer;
     font-size: clamp(1.1rem, 1vw, 2rem);
     height: 40px;
@@ -28,7 +30,7 @@
 }
 
 .selection__input:hover{
-    background: hsl(215, 41%, 20%);
+    background: hsl(212, 13%, 22%);
 }
 
 .selection__input:focus{
