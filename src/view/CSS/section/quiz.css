@@ -1,12 +1,10 @@
 .quiz{
-    margin: 4rem 0rem;
     width: 100%;
 }
 .quiz__header{
     /* background: hsl(246, 17%, 30%); */
-    height: min(100px, 20vh); 
+    min-height: 100px;  
     width: 100%;
-    outline: 1px solid black;
 }
 
 .quiz__header p{
