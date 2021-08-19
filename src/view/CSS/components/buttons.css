@@ -23,6 +23,8 @@
 /* todo add bg color to button */
 #next_question_btn{
     background: #86bbd8;
+    border: none; 
+    border-radius: 5px;
     bottom: 2%;
     font-weight: bold;
     height: 30px;
@@ -35,6 +37,8 @@
 /* todo add bg color */
 #quit_quiz_btn{
     background: #403d39;
+    border: none; 
+    border-radius: 5px;
     color: white;
     bottom: 2%;
     font-weight: bold;
