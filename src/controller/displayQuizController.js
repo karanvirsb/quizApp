@@ -2,18 +2,22 @@ let questionAmount = '';
 let questionRemaining = '';
 let question = '';
 let optionsDiv = '';
-let letter = 97; 
-
+let letter = 97;  
+ 
 function displayQuiz(quizArr){
     changeWindow();
-    collectElements(); 
+    console.log('here'); 
+    document.addEventListener('DOMContentLoaded', () => {
+        collectElements(); 
+    });
     const quiz = new Quiz(quizArr); 
     const nthQuiz = quiz.nthQuizResult;
+    console.log(quiz.question(nthQuiz)); 
     question.innerHTML = quiz.question(nthQuiz);
     const answer = quiz.getAnswer(nthQuiz); 
     quiz.options(nthQuiz).array.forEach(element => {
-        optionCreator(element); 
-    }); 
+    optionCreator(element); 
+    })
 }
 
 function changeWindow(){
@@ -22,9 +26,13 @@ function changeWindow(){
 
 function collectElements(){
     questionAmount = document.querySelector('.quiz__total');
+    console.log(questionAmount); 
     questionRemaining = document.querySelector('.quiz__remaining');
+    console.log(questionRemaining);
     question = document.querySelector('.quiz__body--question');
+    console.log(question); 
     optionsDiv = document.querySelector('.quiz__body--container');
+    console.log(optionsDiv);
 }
 
 function optionCreator(question_option){
