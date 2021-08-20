@@ -1,17 +1,30 @@
-const questionAmount = document.querySelector('.quiz__total');
-const questionRemaining = document.querySelector('.quiz__remaining');
-const question = document.querySelector('.quiz__body--question');
-const optionsDiv = document.querySelector(',quiz__body--container');
+let questionAmount = '';
+let questionRemaining = '';
+let question = '';
+let optionsDiv = '';
 let letter = 97; 
 
 function displayQuiz(quizArr){
+    changeWindow();
+    collectElements(); 
     const quiz = new Quiz(quizArr); 
-    const nthQuiz = quiz.nthQuizResult();
+    const nthQuiz = quiz.nthQuizResult;
     question.innerHTML = quiz.question(nthQuiz);
     const answer = quiz.getAnswer(nthQuiz); 
     quiz.options(nthQuiz).array.forEach(element => {
         optionCreator(element); 
     }); 
+}
+
+function changeWindow(){
+    location.replace("../HTML/displayQuiz.html");
+}
+
+function collectElements(){
+    questionAmount = document.querySelector('.quiz__total');
+    questionRemaining = document.querySelector('.quiz__remaining');
+    question = document.querySelector('.quiz__body--question');
+    optionsDiv = document.querySelector('.quiz__body--container');
 }
 
 function optionCreator(question_option){
