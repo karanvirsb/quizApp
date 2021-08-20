@@ -5,24 +5,24 @@ class Quiz {
         this.quizLength = this.quizArr.length; 
     }
 
-    get getAnswer(quizArr){
+    getAnswer(quizArr){
         return quizArr.correct_answer; 
     }
 
-    get question(quizArr){
+    question(quizArr){
         return quizArr.question;
     }
 
     get nthQuizResult(){
         if(this.counter < this.quizLength){
-            nextQuiz = this.quizArr[this.counter];
+            const nextQuiz = this.quizArr[this.counter];
             this.counter++; 
             return nextQuiz;  
         }
         return; 
     }
 
-    get options(quizArr){
+    options(quizArr){
         option1 = quizArr.correct_answer; 
         options = quizArr.incorrect_answers; 
         return option1.concat(options); 
