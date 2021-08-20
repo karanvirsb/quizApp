@@ -8,11 +8,18 @@ begin_btn.addEventListener('click', e => {
     const difficulty = document.querySelector('#difficulty__input').value;
     const type = document.querySelector('#type__input').value;
 
-    quizJson = retrieveQuiz(amount, category, type, difficulty);
+    retrieveQuiz(amount, category, type, difficulty);
 }); 
 
-function retrieveQuiz(amount, category, type, difficulty) {
-    getData(+amount, category, type, difficulty).then((data) => {
-       return data.results;
+const retrieveQuiz = async (amount, category, type, difficulty) => {
+    const quizData = await getData(+amount, category, type, difficulty).then((data) => { 
+        print(data.results); 
+        return data.results;
     }).catch((err) => console.log(err));
+    
+    return quizData; 
+}
+
+function print(some){
+    console.log(some); 
 }
