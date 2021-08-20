@@ -21,4 +21,10 @@ class quiz {
         }
         return; 
     }
+
+    get options(quizArr){
+        option1 = quizArr.correct_answer; 
+        options = quizArr.incorrect_answers; 
+        return option1.concat(options); 
+    }
 }
