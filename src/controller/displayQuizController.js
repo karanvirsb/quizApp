@@ -7,11 +7,11 @@ let letter = 97;
 function displayQuiz(quizArr){
     const quiz = new Quiz(quizArr); 
     const nthQuiz = quiz.nthQuizResult();
-    const question = quiz.question(nthQuiz);
+    question.innerHTML = quiz.question(nthQuiz);
     const answer = quiz.getAnswer(nthQuiz); 
     quiz.options(nthQuiz).array.forEach(element => {
         optionCreator(element); 
-    });  
+    }); 
 }
 
 function optionCreator(question_option){
