@@ -9,7 +9,9 @@ function displayQuiz(quizArr){
     const nthQuiz = quiz.nthQuizResult();
     const question = quiz.question(nthQuiz);
     const answer = quiz.getAnswer(nthQuiz); 
-    const options = quiz.options(nthQuiz);  
+    quiz.options(nthQuiz).array.forEach(element => {
+        optionCreator(element); 
+    });  
 }
 
 function optionCreator(question_option){
