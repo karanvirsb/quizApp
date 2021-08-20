@@ -1,8 +1,8 @@
-class quiz {
-    constructor(arr, length){
+class Quiz {
+    constructor(arr){
         this.quizArr = arr;
         this.counter = 0; 
-        this.quizLength = length; 
+        this.quizLength = this.quizArr.length; 
     }
 
     get getAnswer(quizArr){
