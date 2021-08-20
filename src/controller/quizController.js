@@ -7,10 +7,8 @@ begin_btn.addEventListener('click', () => {
     const difficulty = document.querySelector('#difficulty__input').value;
     const type = document.querySelector('#type__input').value;
 
-    console.log(amount, category, difficulty, type);
-
-    // quizJson = retrieveQuiz(amount, category, difficulty, type);
-    // console.log(quizJson);  
+    quizJson = retrieveQuiz(amount, category, difficulty, type);
+    console.log(quizJson);  
 }); 
 
 function retrieveQuiz(amount, category, difficulty, type){
