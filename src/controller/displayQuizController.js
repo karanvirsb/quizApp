@@ -6,6 +6,10 @@ let letter = 97;
 
 function displayQuiz(quizArr){
     const quiz = new Quiz(quizArr); 
+    const nthQuiz = quiz.nthQuizResult();
+    const question = quiz.question(nthQuiz);
+    const answer = quiz.getAnswer(nthQuiz); 
+    const options = quiz.options(nthQuiz);  
 }
 
 function optionCreator(question_option){
