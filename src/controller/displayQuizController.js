@@ -12,19 +12,24 @@ function optionCreator(question_option){
     let div = document.createElement('div');
     div.classList.add('options');
 
-    let span = "" 
-    createLetter();
-
-    let option_answer = document.createElement('p');
-    option_answer.classList.add('options__answer');
-    option_answer.innerHTML = question_option; 
+    const span = createLetter(letter);
+    const option_answer = createOptionInfo(question_option); 
 
     div.append(span); 
     div.append(option_answer);
 }
 
+function createOptionInfo(question_option) {
+    let option_answer = document.createElement('p');
+    option_answer.classList.add('options__answer');
+    option_answer.innerHTML = question_option;
+    return option_answer;
+}
+
 function createLetter(char) {
     let span = document.createElement('span');
     span.classList.add('letters');
+    span.innerHTML = String.fromCharCode(char);
+    char++;  
     return span;
 }
