@@ -12,14 +12,8 @@ begin_btn.addEventListener('click', e => {
 }); 
 
 const retrieveQuiz = async (amount, category, type, difficulty) => {
-    const quizData = await getData(+amount, category, type, difficulty).then((data) => { 
-        print(data.results); 
-        return data.results;
+    await getData(+amount, category, type, difficulty).then((data) => { 
+        displayQuiz(data.results); 
     }).catch((err) => console.log(err));
-    
-    return quizData; 
 }
 
-function print(some){
-    console.log(some); 
-}
