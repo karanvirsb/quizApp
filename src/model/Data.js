@@ -2,6 +2,7 @@ const url = "https://opentdb.com/api.php?";
 
 const getData = async (amount = '', category = '', type = "", difficulty = "") =>{
     try {
+        console.log(url + 'amount=' + amount + '&category=' + category + '&difficulty=' + difficulty +  '&type=' + type);
         const resp = await fetch(url + 'amount=' + amount + '&category=' + category + '&difficulty=' + difficulty +  '&type=' + type); 
         const quizJson = await resp.json();
         return quizJson; 
