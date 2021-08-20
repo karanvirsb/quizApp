@@ -9,7 +9,6 @@ begin_btn.addEventListener('click', e => {
     const type = document.querySelector('#type__input').value;
 
     retrieveQuiz(amount, category, type, difficulty);
-    location.replace("../view/HTML/displayQuiz.html"); 
 }); 
 
 const retrieveQuiz = async (amount, category, type, difficulty) => {
