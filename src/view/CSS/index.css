@@ -60,14 +60,11 @@ body{
 .visible{
     visibility: visible;
     opacity: 1;
-    transition: opacity 2s linear;
-    will-change: opacity;
 }
 
 .hidden{
     visibility: hidden;
     opacity: 0;
-    transform: visibility 0s 2s, opacity 2s linear;
 }
 
 @keyframes spin{
