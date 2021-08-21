@@ -18,3 +18,6 @@ const retrieveQuiz = async (amount, category, type, difficulty) => {
     }).catch((err) => console.log(err));
 }
 
+function changeWindow(){
+    location.replace("../HTML/displayQuiz.html");
+}
