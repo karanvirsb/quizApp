@@ -3,21 +3,21 @@ let questionRemaining = '';
 let question = '';
 let optionsDiv = '';
 let letter = 97;  
- 
+
 function displayQuiz(quizArr){
     changeWindow();
-    console.log('here'); 
-    document.addEventListener('DOMContentLoaded', () => {
-        collectElements(); 
-    });
+    collectElements(); 
     const quiz = new Quiz(quizArr); 
     const nthQuiz = quiz.nthQuizResult;
+    console.log(nthQuiz); 
     console.log(quiz.question(nthQuiz)); 
     question.innerHTML = quiz.question(nthQuiz);
     const answer = quiz.getAnswer(nthQuiz); 
-    quiz.options(nthQuiz).array.forEach(element => {
+    const quizOptions = quiz.options(nthQuiz);
+    console.log(quizOptions);
+    quizOptions.forEach(element => {
     optionCreator(element); 
-    })
+    });
 }
 
 function changeWindow(){
