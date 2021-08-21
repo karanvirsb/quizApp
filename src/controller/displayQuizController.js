@@ -4,9 +4,15 @@ let question = '';
 let optionsDiv = '';
 let letter = 97;  
 
+document.addEventListener('DOMContentLoaded', () => {
+    collectElements();
+    displayQuiz(sessionStorage.getItem('quizJson'));
+}, true);
+
 function displayQuiz(quizArr){
-    changeWindow(collectElements);
-    const quiz = new Quiz(quizArr); 
+    sessionStorage.clear(); 
+    const arr = JSON.parse(quizArr);
+    const quiz = new Quiz(arr); 
     const nthQuiz = quiz.nthQuizResult;
     console.log(nthQuiz); 
     console.log(quiz.question(nthQuiz)); 
@@ -19,23 +25,11 @@ function displayQuiz(quizArr){
     });
 }
 
-function changeWindow(callback){
-    location.replace("../HTML/displayQuiz.html");
-    if(document.readyState == "complete"){
-        console.log('completed');
-        callback(); 
-    }
-}
-
-const collectElements = () => {
+function collectElements(){
     questionAmount = document.querySelector('.quiz__total');
-    console.log(questionAmount); 
     questionRemaining = document.querySelector('.quiz__remaining');
-    console.log(questionRemaining);
     question = document.querySelector('.quiz__body--question');
-    console.log(question); 
     optionsDiv = document.querySelector('.quiz__body--container');
-    console.log(optionsDiv);
 }
 
 function optionCreator(question_option){
@@ -63,3 +57,9 @@ function createLetter(char) {
     char++;  
     return span;
 }
+
+function changeWindow(){
+    location.replace("../HTML/displayQuiz.html");
+}
+
+
