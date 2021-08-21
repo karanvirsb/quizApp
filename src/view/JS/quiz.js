@@ -24,7 +24,7 @@ class Quiz {
 
     options(quizArr){
         const option1 = [quizArr.correct_answer]; 
-        const options = [quizArr.incorrect_answers]; 
-        return option1.concat(options); 
+        const options = quizArr.incorrect_answers; 
+        return (options.concat(option1)); 
     }
 }
