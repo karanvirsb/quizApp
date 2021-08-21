@@ -13,11 +13,17 @@
 }
 
 .quiz__body{
+    background: hsl(122, 63%, 92%);
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;  
+    border-radius: 0px 0px 5px 5px;
     position: relative;
     margin: 2rem 0rem;
     min-height: 400px;
     max-width: 1000px;
     width: 100%;
+    
 }
 
 .quiz__body--header{
@@ -34,11 +40,6 @@
 }
 
 .quiz__body--container{
-    background: hsl(122, 63%, 92%);
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;  
-    border-radius: 0px 0px 5px 5px;
     width: 100%;
 }
 
