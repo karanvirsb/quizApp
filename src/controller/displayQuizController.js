@@ -5,8 +5,7 @@ let optionsDiv = '';
 let letter = 97;  
 
 function displayQuiz(quizArr){
-    changeWindow();
-    collectElements(); 
+    changeWindow(collectElements);
     const quiz = new Quiz(quizArr); 
     const nthQuiz = quiz.nthQuizResult;
     console.log(nthQuiz); 
@@ -20,15 +19,15 @@ function displayQuiz(quizArr){
     });
 }
 
-function changeWindow(){
+function changeWindow(callback){
     location.replace("../HTML/displayQuiz.html");
-    window.addEventListener('load', ()=>{
-        const loader_wrapper = document.querySelector('.loader__wrapper');
-        loader_wrapper.classList.add('.hidden'); 
-    });
+    if(document.readyState == "complete"){
+        console.log('completed');
+        callback(); 
+    }
 }
 
-function collectElements(){
+const collectElements = () => {
     questionAmount = document.querySelector('.quiz__total');
     console.log(questionAmount); 
     questionRemaining = document.querySelector('.quiz__remaining');
