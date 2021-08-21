@@ -55,7 +55,7 @@ function createOptionInfo(question_option) {
 function createLetter() {
     let span = document.createElement('span');
     span.classList.add('letters');
-    span.innerHTML = String.fromCharCode(letter);
+    span.innerHTML = String.fromCharCode(letter) + '.';
     letter++;  
     return span;
 }
