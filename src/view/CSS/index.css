@@ -44,7 +44,6 @@ body{
 }
 
 .loader__wrapper{
-    visibility: hidden;
     background: beige;
     inset: 0; 
     position: absolute;
