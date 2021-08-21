@@ -14,6 +14,16 @@
     <script defer src="https://kit.fontawesome.com/267e7db5be.js" crossorigin="anonymous"></script>
     <script defer src="../../controller/displayQuizController.js"></script>
     <script defer src="../JS/quiz.js"></script>
+    <script>
+        window.addEventListener('load', ()=>{
+        const loader_wrapper = document.querySelector('.loader__wrapper');
+        loader_wrapper.classList.add('visible');
+        console.log(loader_wrapper); 
+        setTimeout(() => {
+            loader_wrapper.classList.add('hidden'); 
+        }, 3000);
+        });
+    </script>
 </head>
 <body>
     <header class="header header--dark header--light flex f-sb f-ac">
