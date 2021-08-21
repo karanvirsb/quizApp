@@ -22,6 +22,10 @@ function displayQuiz(quizArr){
 
 function changeWindow(){
     location.replace("../HTML/displayQuiz.html");
+    window.addEventListener('load', ()=>{
+        const loader_wrapper = document.querySelector('.loader__wrapper');
+        loader_wrapper.classList.add('.hidden'); 
+    });
 }
 
 function collectElements(){
