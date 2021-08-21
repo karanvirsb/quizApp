@@ -44,6 +44,7 @@ body{
 }
 
 .loader__wrapper{
+    visibility: hidden;
     background: beige;
     inset: 0; 
     position: absolute;
@@ -57,8 +58,17 @@ body{
     animation: spin 1.5s infinite ease;
 }
 
-.fade{
-    animation: fadeOut 2s ease forwards;
+.visible{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+    will-change: opacity;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transform: visibility 0s 2s, opacity 2s linear;
 }
 
 @keyframes spin{
