@@ -13,7 +13,8 @@ begin_btn.addEventListener('click', e => {
 
 const retrieveQuiz = async (amount, category, type, difficulty) => {
     await getData(+amount, category, type, difficulty).then((data) => { 
-        displayQuiz(data.results); 
+        sessionStorage.setItem('quizJson', JSON.stringify(data.results)); 
+        changeWindow(); 
     }).catch((err) => console.log(err));
 }
 
