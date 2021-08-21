@@ -2,7 +2,7 @@ class Quiz {
     constructor(arr){
         this.quizArr = arr;
         this.counter = 0; 
-        this.quizLength = this.quizArr.length; 
+        this.quizLength = this.quizArr.length || 0; 
     }
 
     getAnswer(quizArr){
