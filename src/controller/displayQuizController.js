@@ -14,12 +14,13 @@ function displayQuiz(quizArr){
     const arr = JSON.parse(quizArr);
     const quiz = new Quiz(arr); 
     const nthQuiz = quiz.nthQuizResult;
-    console.log(nthQuiz); 
-    console.log(quiz.question(nthQuiz)); 
     question.innerHTML = quiz.question(nthQuiz);
+
     const answer = quiz.getAnswer(nthQuiz); 
     const quizOptions = quiz.options(nthQuiz);
+
     console.log(quizOptions);
+    
     quizOptions.forEach(element => {
     optionCreator(element); 
     });
