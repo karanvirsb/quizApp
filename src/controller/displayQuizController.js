@@ -19,8 +19,6 @@ function displayQuiz(quizArr){
     const answer = quiz.getAnswer(nthQuiz); 
     const quizOptions = quiz.options(nthQuiz);
 
-    console.log(quizOptions);
-    
     quizOptions.forEach(element => {
     optionCreator(element); 
     });
@@ -42,6 +40,8 @@ function optionCreator(question_option){
 
     div.append(span); 
     div.append(option_answer);
+    
+    optionsDiv.append(div);
 }
 
 function createOptionInfo(question_option) {
