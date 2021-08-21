@@ -42,3 +42,9 @@ body{
 .grid{
     display: grid; 
 }
+
+.loader__wrapper{
+    background: beige;
+    inset: 0; 
+    position: absolute;
+}
