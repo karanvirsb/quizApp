@@ -23,8 +23,8 @@ class Quiz {
     }
 
     options(quizArr){
-        const option1 = quizArr.correct_answer; 
-        const options = quizArr.incorrect_answers; 
+        const option1 = [quizArr.correct_answer]; 
+        const options = [quizArr.incorrect_answers]; 
         return option1.concat(options); 
     }
 }
