@@ -2,6 +2,7 @@ let questionAmount = '';
 let questionRemaining = '';
 let question = '';
 let optionsDiv = '';
+let quizJson = ''; 
 let letter = 97;  
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function displayQuiz(quizArr){
     sessionStorage.clear(); 
-    const arr = JSON.parse(quizArr);
-    const quiz = new Quiz(arr); 
+    quizJson = JSON.parse(quizArr);
+    const quiz = new Quiz(quizJson); 
     const nthQuiz = quiz.nthQuizResult;
     question.innerHTML = quiz.question(nthQuiz);
 
@@ -35,12 +36,12 @@ function optionCreator(question_option){
     let div = document.createElement('div');
     div.classList.add('options');
 
-    const span = createLetter(letter);
+    const span = createLetter();
     const option_answer = createOptionInfo(question_option); 
 
-    div.append(span); 
+    option_answer.prepend(span);
     div.append(option_answer);
-    
+
     optionsDiv.append(div);
 }
 
@@ -51,16 +52,13 @@ function createOptionInfo(question_option) {
     return option_answer;
 }
 
-function createLetter(char) {
+function createLetter() {
     let span = document.createElement('span');
     span.classList.add('letters');
-    span.innerHTML = String.fromCharCode(char);
-    char++;  
+    span.innerHTML = String.fromCharCode(letter);
+    letter++;  
     return span;
 }
 
-function changeWindow(){
-    location.replace("../HTML/displayQuiz.html");
-}
 
 
