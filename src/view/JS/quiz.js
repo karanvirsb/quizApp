@@ -1,7 +1,6 @@
 class Quiz {
     constructor(arr){
         this.quizArr = arr || [];
-        this.counter = 0; 
         this.quizLength = this.quizArr.length || 0; 
     }
 
@@ -13,11 +12,9 @@ class Quiz {
         return quizArr.question;
     }
 
-    get nthQuizResult(){
-        if(this.counter < this.quizLength){
-            const nextQuiz = this.quizArr[this.counter];
-            this.counter++; 
-            return nextQuiz;  
+    get nthQuizResult(index){
+        if(index < this.quizLength){
+            return this.quizArr[index];
         }
         return; 
     }
