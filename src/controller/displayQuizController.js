@@ -4,7 +4,7 @@ let questionAmount = '';
 let questionRemaining = '';
 let question = '';
 let optionsDiv = '';
-let quizJson = ''; 
+let quizArray = ''; 
 
 document.addEventListener('DOMContentLoaded', () => {
     collectElements();
@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function displayQuiz(quizArr){
     if(quizArr){
         sessionStorage.clear(); 
-        quizJson = JSON.parse(quizArr);
-        const quiz = new Quiz(quizJson); 
+        quizArray = JSON.parse(quizArr);
+        const quiz = new Quiz(quizArray); 
         const nthQuiz = quiz.nthQuizResult(counter);
         question.innerHTML = quiz.question(nthQuiz);
     
