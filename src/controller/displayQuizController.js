@@ -1,5 +1,7 @@
 let counter = 0; 
-let letter = 97;  
+let letter = 97; 
+let next_btn = '';  
+let quit_btn = '';
 let questionAmount = '';
 let questionRemaining = '';
 let question = '';
@@ -40,7 +42,7 @@ function nextQuestion(){
     quizOptions.forEach(element => {
     optionCreator(element); 
     });
-    
+
 }
 
 function collectElements(){
@@ -48,6 +50,8 @@ function collectElements(){
     questionRemaining = document.querySelector('.quiz__remaining');
     question = document.querySelector('.quiz__body--question');
     optionsDiv = document.querySelector('.quiz__body--container');
+    next_btn = document.querySelector('#next_question_btn');
+    quit_btn = document.querySelector('#quit_quiz_btn');
 }
 
 function optionCreator(question_option){
