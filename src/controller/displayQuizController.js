@@ -4,28 +4,43 @@ let questionAmount = '';
 let questionRemaining = '';
 let question = '';
 let optionsDiv = '';
-let quizArray = ''; 
+let quizArray = sessionStorage.getItem('quizJson'); 
+let quiz = '';
 
 document.addEventListener('DOMContentLoaded', () => {
     collectElements();
-    displayQuiz(sessionStorage.getItem('quizJson'));
+    quizArray = JSON.parse(quizArray);
+    displayQuiz(quizArray);
 }, true);
 
 function displayQuiz(quizArr){
     if(quizArr){
-        sessionStorage.clear(); 
-        quizArray = JSON.parse(quizArr);
-        const quiz = new Quiz(quizArray); 
+        quiz = new Quiz(quizArr); 
         const nthQuiz = quiz.nthQuizResult(counter);
         question.innerHTML = quiz.question(nthQuiz);
     
         const answer = quiz.getAnswer(nthQuiz); 
+
         const quizOptions = quiz.options(nthQuiz);
     
         quizOptions.forEach(element => {
         optionCreator(element); 
         });
+        sessionStorage.clear(); 
     }
+}
+
+function nextQuestion(){
+    counter++; 
+
+    const nthQuiz = quiz.nthQuizResult(counter);
+    question.innerHTML = quiz.question(nthQuiz);
+    const answer = quiz.getAnswer(nthQuiz); 
+    const quizOptions = quiz.options(nthQuiz);
+    quizOptions.forEach(element => {
+    optionCreator(element); 
+    });
+    
 }
 
 function collectElements(){
