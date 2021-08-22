@@ -57,11 +57,18 @@ function createOptionInfo(question_option) {
 
 function createLetter() {
     let span = document.createElement('span');
-    span.classList.add('letters');
+    span.classList.add('letter');
     span.innerHTML = String.fromCharCode(letter) + '.';
     letter++;  
     return span;
 }
 
+function addGlobalEventListener(selector,type,callback){
+    document.addEventListener(type, e => {
+        if(e.target.matches(selector)){
+            callback(e); 
+        }
+    });
+}
 
 
