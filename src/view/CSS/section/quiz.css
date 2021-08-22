@@ -53,6 +53,18 @@
     outline: 1px solid black;
 }
 
+.options:hover{
+    background: hsl(122, 60%, 80%);
+}
+
+.active-option{
+    background: hsl(122, 60%, 75%) ;
+}
+
+.active-option:hover{
+    background: hsl(122, 55%, 85%);
+}
+
 .options:last-of-type{
     margin-bottom: 4rem;
 }
