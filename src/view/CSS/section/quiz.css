@@ -67,8 +67,8 @@
     background: hsl(122, 55%, 85%);
 }
 
-.options:last-of-type{
-    margin-bottom: 4rem;
+.options_label{
+    min-height: max-content; 
 }
 
 .radio__btn{
