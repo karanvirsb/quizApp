@@ -1,9 +1,10 @@
+let counter = 0; 
+let letter = 97;  
 let questionAmount = '';
 let questionRemaining = '';
 let question = '';
 let optionsDiv = '';
 let quizJson = ''; 
-let letter = 97;  
 
 document.addEventListener('DOMContentLoaded', () => {
     collectElements();
@@ -11,18 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
 }, true);
 
 function displayQuiz(quizArr){
-    sessionStorage.clear(); 
-    quizJson = JSON.parse(quizArr);
-    const quiz = new Quiz(quizJson); 
-    const nthQuiz = quiz.nthQuizResult;
-    question.innerHTML = quiz.question(nthQuiz);
-
-    const answer = quiz.getAnswer(nthQuiz); 
-    const quizOptions = quiz.options(nthQuiz);
-
-    quizOptions.forEach(element => {
-    optionCreator(element); 
-    });
+    if(quizArr){
+        sessionStorage.clear(); 
+        quizJson = JSON.parse(quizArr);
+        const quiz = new Quiz(quizJson); 
+        const nthQuiz = quiz.nthQuizResult(counter);
+        question.innerHTML = quiz.question(nthQuiz);
+    
+        const answer = quiz.getAnswer(nthQuiz); 
+        const quizOptions = quiz.options(nthQuiz);
+    
+        quizOptions.forEach(element => {
+        optionCreator(element); 
+        });
+    }
 }
 
 function collectElements(){
