@@ -12,7 +12,7 @@ class Quiz {
         return quizArr.question;
     }
 
-    get nthQuizResult(index){
+    nthQuizResult(index){
         if(index < this.quizLength){
             return this.quizArr[index];
         }
