@@ -71,6 +71,15 @@
     margin-bottom: 4rem;
 }
 
+.radio__btn{
+    position: absolute;
+    opacity: 0;
+}
+
+.radio__btn:checked ~ .options{
+    background: green;
+}
+
 .letter{
     font-size: 1.2rem;
     padding-right: 1rem;
