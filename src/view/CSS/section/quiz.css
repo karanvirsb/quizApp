@@ -59,14 +59,6 @@
     box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
-.active-option{
-    background: hsl(122, 60%, 75%) ;
-}
-
-.active-option:hover{
-    background: hsl(122, 55%, 85%);
-}
-
 .options_label{
     min-height: max-content; 
 }
@@ -77,7 +69,11 @@
 }
 
 .radio__btn:checked ~ .options{
-    background: green;
+    background: hsl(122, 60%, 75%);
+}
+
+.radio__btn:checked ~ .options:hover{
+    background: hsl(122, 55%, 85%);
 }
 
 .letter{
