@@ -14,20 +14,24 @@ document.addEventListener('DOMContentLoaded', () => {
     quizArray = JSON.parse(quizArray);
     displayQuiz(quizArray);
 
-    next_btn.addEventListener('click', () => {
-        const isItWorking = isItCorrect(quiz.quizAnswer, getUserAnswer);
-        if(isItWorking !== -1){ 
-            nextQuestion(); 
-        } else{
-            alert('Pick an answer even if you are unsure');
-        }
-    })
+    if(next_btn){
+        next_btn.addEventListener('click', () => {
+            const isItWorking = isItCorrect(quiz.quizAnswer, getUserAnswer);
+            if(isItWorking !== -1){ 
+                nextQuestion(); 
+            } else{
+                alert('Pick an answer even if you are unsure');
+            }
+        })
+    }
 
-    quit_btn.addEventListener('click', () => {
-        if(alert('Are you sure you want to quit?')){
-            location.replace('../HTML/index.html');
-        }
-    })
+    if(quit_btn){
+        quit_btn.addEventListener('click', () => {
+            if(alert('Are you sure you want to quit?')){
+                location.replace('../HTML/index.html');
+            }
+        })
+    }
 }, true);
 
 function displayQuiz(quizArr){
