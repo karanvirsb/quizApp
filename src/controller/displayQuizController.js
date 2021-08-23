@@ -76,6 +76,7 @@ function nextQuestion(){
         displayOptions(quizOptions)
     } else{
         sessionStorage.setItem('answersCorrect', questions_correct()); 
+        sessionStorage.setItem('lengthOfQuiz', quiz.quizLength); 
         location.replace('../HTML/quizResults.html');
     }
 }
