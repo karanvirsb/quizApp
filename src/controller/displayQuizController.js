@@ -59,15 +59,19 @@ function displayOptions(quizOptions) {
 function nextQuestion(){
     clearQuiz(); 
     counter++; 
-    questionRemaining.innerHTML = (counter + 1);
-    const nthQuiz = quiz.nthQuizResult(counter);
-    question.innerHTML = quiz.question(nthQuiz);
-    const answer = quiz.getAnswer(nthQuiz); 
-    const quizOptions = quiz.options(nthQuiz);
-    letter = 97; //todo reset letter func
-    quizOptions.forEach(element => {
-    optionCreator(element); 
-    });
+    if(counter < 10){
+        questionRemaining.innerHTML = (counter + 1);
+        const nthQuiz = quiz.nthQuizResult(counter);
+        question.innerHTML = quiz.question(nthQuiz);
+    
+        quiz.getAnswer(nthQuiz); 
+        const quizOptions = quiz.options(nthQuiz);
+        letter = 97; //todo reset letter func
+        displayOptions(quizOptions)
+    } else{
+        sessionStorage.setItem('answersCorrect', questions_correct()); 
+        location.replace('src/view/HTML/quizResults.html');
+    }
 }
 
 
