@@ -5,7 +5,8 @@ class Quiz {
     }
 
     getAnswer(quizArr){
-        return quizArr.correct_answer; 
+        this.quizAnswer = quizArr.correct_answer; 
+        return this.quizAnswer; 
     }
 
     question(quizArr){
