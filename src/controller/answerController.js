@@ -2,8 +2,13 @@ let correct = 0;
 
 function isItCorrect(answer, userAnswer){
     const userAns = userAnswer(); 
-    if(answer === userAns){
-        correct++; 
+    switch(userAns){
+        case '': 
+            return -1; 
+        default:
+        if(answer === userAns){
+            correct++; 
+        }
     }
 }
 
@@ -21,5 +26,10 @@ function getUserAnswer(){
             sibling = elem.nextElementSibling; 
         }
     });
-    return sibling.querySelector('.options__answer').lastChild.textContent; 
+
+    if(sibling === ''){
+        return ''; 
+    } else{
+        return sibling.querySelector('.options__answer').lastChild.textContent; 
+    }
 }
