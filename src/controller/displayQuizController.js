@@ -22,6 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Pick an answer even if you are unsure');
         }
     })
+
+    quit_btn.addEventListener('click', () => {
+        if(alert('Are you sure you want to quit?')){
+            location.replace('src/view/HTML/index.html');
+        }
+    })
 }, true);
 
 function displayQuiz(quizArr){
@@ -91,7 +97,6 @@ function optionCreator(question_option){
     div.append(option_answer);
 
     label.append(div);
-
     optionsDiv.append(label);
 }
 
