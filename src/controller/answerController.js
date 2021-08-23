@@ -7,7 +7,9 @@ function isItCorrect(answer, userAnswer){
 }
 
 function questions_correct(){
-    return correct; 
+    const temp = correct; 
+    correct = 0; 
+    return temp; 
 }
 
 function getUserAnswer(){
