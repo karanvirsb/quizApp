@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     quit_btn.addEventListener('click', () => {
         if(alert('Are you sure you want to quit?')){
-            location.replace('src/view/HTML/index.html');
+            location.replace('../index.html');
         }
     })
 }, true);
@@ -76,7 +76,7 @@ function nextQuestion(){
         displayOptions(quizOptions)
     } else{
         sessionStorage.setItem('answersCorrect', questions_correct()); 
-        location.replace('src/view/HTML/quizResults.html');
+        location.replace('../quizResults.html');
     }
 }
 
