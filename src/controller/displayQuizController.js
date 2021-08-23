@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     collectElements();
     quizArray = JSON.parse(quizArray);
     displayQuiz(quizArray);
+
+    next_btn.addEventListener('click', () => {
+        nextQuestion(); 
+    })
 }, true);
 
 function displayQuiz(quizArr){
@@ -33,16 +37,16 @@ function displayQuiz(quizArr){
 }
 
 function nextQuestion(){
+    clearQuiz(); 
     counter++; 
-
     const nthQuiz = quiz.nthQuizResult(counter);
     question.innerHTML = quiz.question(nthQuiz);
     const answer = quiz.getAnswer(nthQuiz); 
     const quizOptions = quiz.options(nthQuiz);
+    letter = 97; //todo reset letter func
     quizOptions.forEach(element => {
     optionCreator(element); 
     });
-
 }
 
 function collectElements(){
@@ -80,6 +84,13 @@ function createLetter() {
     span.innerHTML = String.fromCharCode(letter) + '.';
     letter++;  
     return span;
+}
+
+function clearQuiz(){
+    question.innerHTML = '';
+    while(optionsDiv.firstChild){
+        optionsDiv.firstChild.remove(); 
+    }
 }
 
 function addGlobalEventListener(selector,type,callback){
