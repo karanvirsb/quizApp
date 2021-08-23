@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results</title>
     <!-- links -->
-    <link rel="stylesheet" href="../CSS/index.css">
-    <link rel="stylesheet" href="../CSS/section/header.css">
-    <link rel="stylesheet" href="../CSS/components/buttons.css">
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/section/header.css" />
+    <link rel="stylesheet" href="../CSS/components/buttons.css" />
     <!-- scripts -->
-    <script defer src="https://kit.fontawesome.com/267e7db5be.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      defer
+      src="https://kit.fontawesome.com/267e7db5be.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header header--dark header--light flex f-sb f-ac">
-        <div class="header__nav flex f-ac">
-            <h1 class="header__logo"><a href="index.html">QuizBee</a></h1>
-            <div class="header__menu flex f-c f-se f-ac">
-                <span class="menu__bar"></span>
-                <span class="menu__bar"></span>
-                <span class="menu__bar"></span>
-            </div>
-            <nav class="nav">
-                <div class="nav__links">
-                    <a id="random__btn" href="">Random</a>
-                    <a id="create__btn" href="">Create</a>
-                    <a id="explore__btn" href="">Explore</a>
-                </div>
-            </nav>
+      <div class="header__nav flex f-ac">
+        <h1 class="header__logo"><a href="index.html">QuizBee</a></h1>
+        <div class="header__menu flex f-c f-se f-ac">
+          <span class="menu__bar"></span>
+          <span class="menu__bar"></span>
+          <span class="menu__bar"></span>
         </div>
-        <div class="header__account flex f-jc f-ac">
-            <i class="fas fa-user"></i>
-        </div>
+        <nav class="nav">
+          <div class="nav__links">
+            <a id="random__btn" href="">Random</a>
+            <a id="create__btn" href="">Create</a>
+            <a id="explore__btn" href="">Explore</a>
+          </div>
+        </nav>
+      </div>
+      <div class="header__account flex f-jc f-ac">
+        <i class="fas fa-user"></i>
+      </div>
     </header>
     <section class="result">
-        <div class="">
-
+      <div class="result__wrapper">
+        <div class="result__header">
+          <p class="result__stat">
+            Stat: <span class="correct"></span> out of
+            <span class="total"></span>
+          </p>
+          <p class="result__quote"></p>
         </div>
+        <div class="result__body">
+          <div class="arc">
+            <svg class="progress-ring" height="120" width="120">
+              <circle
+                class="progress-ring__circle"
+                stroke-width="1"
+                fill="transparent"
+                r="58"
+                cx="60"
+                cy="60"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
