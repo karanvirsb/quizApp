@@ -14,11 +14,13 @@
     <script defer src="https://kit.fontawesome.com/267e7db5be.js" crossorigin="anonymous"></script>
     <script defer src="../../controller/displayQuizController.js"></script>
     <script defer src="../JS/quiz.js"></script>
+    <script defer src="../../controller/answerController.js"></script>
     <script>
         window.addEventListener('load', ()=>{
         const loader_wrapper = document.querySelector('.loader__wrapper');
         loader_wrapper.classList.add('visible');
         setTimeout(() => {
+            loader_wrapper.classList.remove('visible');
             loader_wrapper.classList.add('hidden'); 
         }, 3000);
         });
