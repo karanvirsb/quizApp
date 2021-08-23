@@ -87,6 +87,12 @@ function optionCreator(question_option){
     optionsDiv.append(label);
 }
 
+function createLabel(){
+    const label = document.createElement('label');
+    label.classList.add('options_label');
+    return label; 
+}
+
 function createOptionInfo(question_option) {
     let option_answer = document.createElement('p');
     option_answer.classList.add('options__answer');
