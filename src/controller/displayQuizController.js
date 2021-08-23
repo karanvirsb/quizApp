@@ -28,9 +28,7 @@ function displayQuiz(quizArr){
 
         const nthQuiz = quiz.nthQuizResult(counter);
         question.innerHTML = quiz.question(nthQuiz);
-    
         const answer = quiz.getAnswer(nthQuiz); 
-
         const quizOptions = quiz.options(nthQuiz);
        
         displayOptions(quizOptions);
@@ -54,6 +52,8 @@ function displayOptions(quizOptions) {
 }
 
 function nextQuestion(){
+
+    isItCorrect(answer, getUserAnswer()); 
     clearQuiz(); 
     counter++; 
     const nthQuiz = quiz.nthQuizResult(counter);
