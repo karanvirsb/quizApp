@@ -22,18 +22,35 @@ document.addEventListener('DOMContentLoaded', () => {
 function displayQuiz(quizArr){
     if(quizArr){
         quiz = new Quiz(quizArr); 
+        
+        questionAmount.innerHTML = quizArr.length
+        questionRemaining.innerHTML = (counter + 1);
+
         const nthQuiz = quiz.nthQuizResult(counter);
         question.innerHTML = quiz.question(nthQuiz);
     
         const answer = quiz.getAnswer(nthQuiz); 
 
         const quizOptions = quiz.options(nthQuiz);
-    
-        quizOptions.forEach(element => {
-        optionCreator(element); 
-        });
+       
+        displayOptions(quizOptions);
         sessionStorage.clear(); 
     }
+}
+
+function collectElements(){
+    questionAmount = document.querySelector('.quiz__total');
+    questionRemaining = document.querySelector('.quiz__remaining');
+    question = document.querySelector('.quiz__body--question');
+    optionsDiv = document.querySelector('.quiz__body--container');
+    next_btn = document.querySelector('#next_question_btn');
+    quit_btn = document.querySelector('#quit_quiz_btn');
+}
+
+function displayOptions(quizOptions) {
+    quizOptions.forEach(element => {
+        optionCreator(element);
+    });
 }
 
 function nextQuestion(){
@@ -49,14 +66,6 @@ function nextQuestion(){
     });
 }
 
-function collectElements(){
-    questionAmount = document.querySelector('.quiz__total');
-    questionRemaining = document.querySelector('.quiz__remaining');
-    question = document.querySelector('.quiz__body--question');
-    optionsDiv = document.querySelector('.quiz__body--container');
-    next_btn = document.querySelector('#next_question_btn');
-    quit_btn = document.querySelector('#quit_quiz_btn');
-}
 
 function optionCreator(question_option){
     let div = document.createElement('div');
