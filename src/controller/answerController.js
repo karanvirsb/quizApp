@@ -1,7 +1,8 @@
-const correct = 0; 
+let correct = 0; 
 
 function isItCorrect(answer, userAnswer){
-    if(answer === userAnswer()){
+    const userAns = userAnswer(); 
+    if(answer === userAns){
         correct++; 
     }
 }
@@ -20,6 +21,5 @@ function getUserAnswer(){
             sibling = elem.nextElementSibling; 
         }
     });
-
-    return sibling.querySelector('.options_answer').innerHTML; 
+    return sibling.querySelector('.options__answer').lastChild.textContent; 
 }
