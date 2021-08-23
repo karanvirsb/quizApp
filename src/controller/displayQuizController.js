@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     displayQuiz(quizArray);
 
     next_btn.addEventListener('click', () => {
+        isItCorrect(quiz.quizAnswer, getUserAnswer); 
         nextQuestion(); 
     })
 }, true);
@@ -28,7 +29,7 @@ function displayQuiz(quizArr){
 
         const nthQuiz = quiz.nthQuizResult(counter);
         question.innerHTML = quiz.question(nthQuiz);
-        const answer = quiz.getAnswer(nthQuiz); 
+        quiz.getAnswer(nthQuiz); 
         const quizOptions = quiz.options(nthQuiz);
        
         displayOptions(quizOptions);
@@ -52,8 +53,6 @@ function displayOptions(quizOptions) {
 }
 
 function nextQuestion(){
-
-    isItCorrect(answer, getUserAnswer()); 
     clearQuiz(); 
     counter++; 
     const nthQuiz = quiz.nthQuizResult(counter);
