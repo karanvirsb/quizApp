@@ -55,6 +55,7 @@ function displayOptions(quizOptions) {
 function nextQuestion(){
     clearQuiz(); 
     counter++; 
+    questionRemaining.innerHTML = (counter + 1);
     const nthQuiz = quiz.nthQuizResult(counter);
     question.innerHTML = quiz.question(nthQuiz);
     const answer = quiz.getAnswer(nthQuiz); 
