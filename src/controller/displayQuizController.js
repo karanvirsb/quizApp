@@ -71,13 +71,20 @@ function optionCreator(question_option){
     let div = document.createElement('div');
     div.classList.add('options');
 
+    const label = createLabel(); 
+    const radio_btn = createRadioBtn(); 
+
     const span = createLetter();
     const option_answer = createOptionInfo(question_option); 
-
+    
     option_answer.prepend(span);
+
+    label.append(radio_btn);
     div.append(option_answer);
 
-    optionsDiv.append(div);
+    label.append(div);
+
+    optionsDiv.append(label);
 }
 
 function createOptionInfo(question_option) {
