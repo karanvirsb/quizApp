@@ -93,6 +93,14 @@ function createLabel(){
     return label; 
 }
 
+function createRadioBtn(){
+    const btn = document.createElement('input');
+    btn.type = 'radio';
+    btn.name = 'options'
+    btn.classList.add('radio__btn');
+    return btn;
+}
+
 function createOptionInfo(question_option) {
     let option_answer = document.createElement('p');
     option_answer.classList.add('options__answer');
