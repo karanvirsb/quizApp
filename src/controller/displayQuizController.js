@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     quit_btn.addEventListener('click', () => {
         if(alert('Are you sure you want to quit?')){
-            location.replace('../index.html');
+            location.replace('../HTML/index.html');
         }
     })
 }, true);
@@ -65,7 +65,7 @@ function displayOptions(quizOptions) {
 function nextQuestion(){
     clearQuiz(); 
     counter++; 
-    if(counter < 10){
+    if(counter < quiz.quizLength){
         questionRemaining.innerHTML = (counter + 1);
         const nthQuiz = quiz.nthQuizResult(counter);
         question.innerHTML = quiz.question(nthQuiz);
@@ -76,7 +76,7 @@ function nextQuestion(){
         displayOptions(quizOptions)
     } else{
         sessionStorage.setItem('answersCorrect', questions_correct()); 
-        location.replace('../quizResults.html');
+        location.replace('../HTML/quizResults.html');
     }
 }
 
