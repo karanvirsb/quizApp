@@ -46,9 +46,14 @@
     width: 75%; 
 }
 
-progress::after{
-    content: 'hello';
-}
+/* progress::after{
+    content: '';
+    width: 0px; 
+    height: 0px; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black; 
+} */
 
 progress::-webkit-progress-value, progress::-moz-progress-bar{
     background:hsl(122, 60%, 85%);
