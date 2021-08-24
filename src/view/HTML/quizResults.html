@@ -36,22 +36,24 @@
     </header>
     <section class="result">
       <h1 class="result__title">Results</h1>
-      <div class="result__wrapper">
-        <div class="result__header">
-          <p class="result__stat">
-            <span class="correct"></span> out of
-            <span class="total"></span>
-          </p>
-          <p class="result__quote"></p>
-        </div>
-        <div class="result__body">
-          <div class="progress">
-            <progress value="0" max="100">0%</progress>
+      <div class="result__wrapper flex f-jc f-ac">
+        <div class="result__container">
+          <div class="result__header">
+            <p class="result__stat">
+              <span class="correct"></span> out of
+              <span class="total"></span>
+            </p>
+            <p class="result__quote"></p>
           </div>
-        </div>
-        <div class="result__footer">
-            <button>Restart</button>
-            <button>View Results</button>
+          <div class="result__body">
+            <div class="progress">
+              <progress value="0" max="100">0%</progress>
+            </div>
+          </div>
+          <div class="result__footer">
+              <button>Restart</button>
+              <button>View Results</button>
+          </div>
         </div>
       </div>
     </section>
