@@ -21,9 +21,13 @@ function collectResultElements(){
     gif_container =  document.querySelector('.gif_generator');
     correct_amount = sessionStorage.getItem('answersCorrect');
     total_amount = sessionStorage.getItem('lengthOfQuiz'); 
+    console.log(total_questions, correct_questions);
 }
 
 function displayResults(){
-    total_questions.innerHTMl = total_amount;
-    correct_questions.innerHTMl = correct_amount; 
+    console.log(total_amount, correct_amount);
+    total_questions.innerHTML = total_amount;
+    correct_questions.innerHTML = correct_amount; 
+
+    displayProgressBar()
 }
