@@ -59,6 +59,7 @@
 
 #restart_quiz_btn{
     font-weight: 600;
+    margin-right: 1rem; 
     padding: 0.5rem 1rem;
     text-transform: uppercase; 
     width: max-content; 
