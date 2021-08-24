@@ -17,6 +17,7 @@
 .result__header{
     background: hsl(122, 60%, 85%);
     border: 1px ridge black; 
+    border-radius: 7px 7px 0px 0px;
     font-size: clamp(1.35rem, 2vw, 1.75rem);
     padding: 1rem 0rem; 
     text-align: center;
@@ -48,4 +49,10 @@ progress::after{
 progress::-webkit-progress-value, progress::-moz-progress-bar{
     background:hsl(122, 60%, 85%);
     border-radius: 20px;
+}
+
+.result__footer{
+    border: 1px ridge black; 
+    border-top: none; 
+    border-radius: 0px 0px 7px 7px;
 }
