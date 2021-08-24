@@ -9,6 +9,7 @@ let total_amount = '';
 
 document.addEventListener('DOMContentLoaded', () => {
     collectResultElements();
+    displayResults();
 });
 
 function collectResultElements(){
@@ -20,4 +21,9 @@ function collectResultElements(){
     gif_container =  document.querySelector('.gif_generator');
     correct_amount = sessionStorage.getItem('answersCorrect');
     total_amount = sessionStorage.getItem('lengthOfQuiz'); 
+}
+
+function displayResults(){
+    total_questions.innerHTMl = total_amount;
+    correct_questions.innerHTMl = correct_amount; 
 }
