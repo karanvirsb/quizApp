@@ -11,7 +11,11 @@
 
 .result__wrapper{
     position: relative;
-    outline: 1px solid black;
+}
+
+.result__container{
+    border: 1px solid black; 
+    border-radius: 5px;
 }
 
 .result__header{
@@ -30,7 +34,12 @@
     background: white;
     border: 1px solid gray;
     border-radius: 10px;
+    margin-top: 10px;
     width: 75%; 
+}
+
+progress::after{
+    content: 'hello';
 }
 
 progress::-webkit-progress-value, progress::-moz-progress-bar{
