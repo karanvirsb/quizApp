@@ -13,16 +13,19 @@
     position: relative;
 }
 
-.result__container{
-    border: 1px solid black; 
-    border-radius: 5px;
-}
 
 .result__header{
     background: hsl(122, 60%, 85%);
+    border: 1px ridge black; 
     font-size: clamp(1.35rem, 2vw, 1.75rem);
     padding: 1rem 0rem; 
     text-align: center;
+}
+
+.result__body{
+    border-left: 1px ridge black; 
+    border-right: 1px ridge black; 
+    padding: 1rem 0rem; 
 }
 
 .result__quote{
