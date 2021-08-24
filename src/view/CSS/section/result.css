@@ -8,3 +8,8 @@
     padding: 2rem 0rem;
     text-align: center;
 }
+
+.result__wrapper{
+    position: relative;
+    outline: 1px solid black;
+}
