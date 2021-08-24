@@ -1,0 +1,10 @@
+.result{
+    position: relative;
+    width: 100%;
+}
+
+.result__title{
+    font-size: 2.5rem;
+    padding: 2rem 0rem;
+    text-align: center;
+}
