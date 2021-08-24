@@ -20,3 +20,8 @@
     padding: 1rem 0rem; 
     text-align: center;
 }
+
+.result__quote{
+    font-size: clamp(1.35rem, 1vw, 1.75rem);
+    padding: 1rem 0rem; 
+}
