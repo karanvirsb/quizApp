@@ -25,3 +25,15 @@
     font-size: clamp(1.35rem, 1vw, 1.75rem);
     padding: 1rem 0rem; 
 }
+
+.progress progress{
+    background: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 75%; 
+}
+
+progress::-webkit-progress-value, progress::-moz-progress-bar{
+    background:hsl(122, 60%, 85%);
+    border-radius: 20px;
+}
