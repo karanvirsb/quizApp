@@ -13,3 +13,8 @@
     position: relative;
     outline: 1px solid black;
 }
+
+.result__header{
+    background: hsl(122, 60%, 85%);
+
+}
