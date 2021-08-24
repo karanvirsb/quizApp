@@ -58,7 +58,10 @@
 }
 
 #restart_quiz_btn{
-    
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase; 
+    width: max-content; 
 }
 
 #view_results_btn{
