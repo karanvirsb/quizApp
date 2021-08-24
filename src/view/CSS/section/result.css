@@ -31,7 +31,11 @@
 
 .result__quote{
     font-size: clamp(1.35rem, 1vw, 1.75rem);
-    padding: 1rem 0rem; 
+    margin: 2rem 0rem; 
+}
+
+.progress__percent{
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
 }
 
 .progress progress{
