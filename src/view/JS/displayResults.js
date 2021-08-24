@@ -4,6 +4,8 @@ let progress_percent = '';
 let progress_bar = ''; 
 let quotes = ''; 
 let gif_container = ''; 
+let correct_amount = '';
+let total_amount = '';
 
 document.addEventListener('DOMContentLoaded', () => {
     collectResultElements();
@@ -16,4 +18,6 @@ function collectResultElements(){
     progress_bar = document.querySelector('.progress__bar'); 
     quotes = document.querySelector('.result__quote'); 
     gif_container =  document.querySelector('.gif_generator');
+    correct_amount = sessionStorage.getItem('answersCorrect');
+    total_amount = sessionStorage.getItem('lengthOfQuiz'); 
 }
