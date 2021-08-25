@@ -63,6 +63,10 @@
     min-height: max-content; 
 }
 
+.options_label:last-of-type{
+    margin-bottom: 2rem; 
+}
+
 .radio__btn{
     position: absolute;
     opacity: 0;
