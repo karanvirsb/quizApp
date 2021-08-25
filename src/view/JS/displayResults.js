@@ -1,11 +1,11 @@
-let total_questions = '';
-let correct_questions = ''; 
-let progress_percent = ''; 
-let progress_bar = ''; 
-let quotes = ''; 
-let gif_container = ''; 
-let correct_amount = '';
-let total_amount = '';
+let total_questions;
+let correct_questions; 
+let progress_percent; 
+let progress_bar; 
+let quotes; 
+let gif_container; 
+let correct_amount;
+let total_amount;
 
 document.addEventListener('DOMContentLoaded', () => {
     collectResultElements();
@@ -42,5 +42,11 @@ function displayPercentage(correct, total){
     const percentage = Math.floor((correct/total) * 100);
     progress_percent.innerHTML = percentage + '%'; 
     return percentage; 
+}
+
+function displayQuote(percent){
+    switch(percent){
+        case 
+    }
 }
 
