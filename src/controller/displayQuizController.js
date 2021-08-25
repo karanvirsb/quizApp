@@ -1,13 +1,13 @@
 let counter = 0; 
 let letter = 97; 
-let next_btn = '';  
-let quit_btn = '';
-let questionAmount = '';
-let questionRemaining = '';
-let question = '';
-let optionsDiv = '';
+let next_btn;  
+let quit_btn;
+let questionAmount;
+let questionRemaining;
+let question;
+let optionsDiv;
 let quizArray = sessionStorage.getItem('quizJson'); 
-let quiz = '';
+let quiz;
 
 document.addEventListener('DOMContentLoaded', () => {
     collectElements();
