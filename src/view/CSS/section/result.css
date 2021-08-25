@@ -31,8 +31,10 @@
 
 .result__quote{
     font-size: clamp(1.35rem, 1vw, 1.75rem);
-    margin: 2rem 0rem; 
-    padding: 0rem 1rem; 
+    margin: auto 1rem; 
+    padding: 0rem 1rem;
+    text-align: center; 
+    width: 90%; 
 }
 
 .progress__percent{
@@ -44,6 +46,7 @@
     border: 1px solid gray;
     border-radius: 10px;
     margin-top: 10px;
+    margin-bottom: 1.5rem; 
     width: 75%; 
 }
 
