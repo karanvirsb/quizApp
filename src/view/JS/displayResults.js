@@ -29,7 +29,8 @@ function displayResults(){
     correct_questions.innerHTML = correct_amount; 
 
     displayProgressBar(correct_amount,total_amount)
-    displayPercentage(correct_amount, total_amount); 
+    const percentage = displayPercentage(correct_amount, total_amount); 
+    displayQuote(percentage); 
 }
 
 function displayProgressBar(correctNum, totalNum){
