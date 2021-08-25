@@ -26,12 +26,11 @@ class Quiz {
         return (options.concat(option1)); 
     }
 
-    get newJson(){
-        let newJson; 
-        let templateJson = '{"question":,"options":, "picked":, "done":,}';
-        for(let i = 0; i < this.quizLegnth; i++){
+    newJson(){
+        let newJson = []; 
+        let templateJson = '{"question":"","options":"", "picked":"", "done":""}';
+        for(let i = 0; i < this.quizLength; i++){
             let tempArr = JSON.parse(templateJson);
-            console.log(tempArr); 
             const tempQuiz = this.nthQuizResult(i);
             tempArr.question = this.question(tempQuiz);
             tempArr.options = this.options(tempQuiz);
