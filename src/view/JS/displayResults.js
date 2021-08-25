@@ -63,3 +63,15 @@ function getQuote(percent){
     if(percent <= 100) return 'Thats excellent you pushed really hard heres some 🍬' 
 }
 
+// function clearStorage() {
+
+//     let session = sessionStorage.getItem('ref');
+
+//     if (session == null) {
+
+//         localStorage.removeItem('remove');
+
+//     }
+//     sessionStorage.setItem('ref', 1);
+// }
+// window.addEventListener('load', clearStorage);
