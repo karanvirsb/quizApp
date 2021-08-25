@@ -29,10 +29,16 @@ function displayResults(){
     correct_questions.innerHTML = correct_amount; 
 
     displayProgressBar(correct_amount,total_amount)
+    displayPercentage(correct_amount, total_amount); 
 }
 
 function displayProgressBar(correctNum, totalNum){
     progress_bar.setAttribute('max', totalNum);
     progress_bar.setAttribute('value', correctNum);
+}
+
+function displayPercentage(correct, total){
+    const percentage = Math.floor(correct/total); 
+    progress_percent.innerHTML = percentage + '%'; 
 }
 
