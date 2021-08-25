@@ -2,7 +2,7 @@
     background: hsl(148, 62%, 64%);
     border: none; 
     border-radius: 5px;
-    bottom: 10%;
+    bottom: -10%;
     cursor: pointer;
     font-size: clamp(1rem, 1vw, 1.5rem);
     font-weight: bold;
