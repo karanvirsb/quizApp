@@ -52,7 +52,7 @@ function displayQuote(percent){
 function getQuote(percent){
     if(percent < 10) return 'You can do better we believe in you 😃'
     if(percent < 20) return 'Thats great keep on going you can do it 👏'
-    if(percent < 30) return 'You can prove them wrong 🧗'
+    if(percent < 30) return 'You can prove them wrong keep climbing 🧗'
     if(percent < 40) return 'keep on trying you will get there 🏃‍♀️'
     if(percent < 50) return 'You are almost half way there ⏳'
     if(percent < 60) return 'Even sometimes average is the best 🧑‍🤝‍🧑'
