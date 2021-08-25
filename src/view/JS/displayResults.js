@@ -38,7 +38,7 @@ function displayProgressBar(correctNum, totalNum){
 }
 
 function displayPercentage(correct, total){
-    const percentage = Math.floor(correct/total); 
+    const percentage = Math.floor((correct/total) * 100);
     progress_percent.innerHTML = percentage + '%'; 
 }
 
