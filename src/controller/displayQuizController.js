@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function displayQuiz(quizArr){
     if(quizArr){
         quiz = new Quiz(quizArr); 
+        quiz_json = quiz.newJson();
         
         questionAmount.innerHTML = quizArr.length
         questionRemaining.innerHTML = (counter + 1);
@@ -67,9 +68,9 @@ function displayOptions(quizOptions) {
 }
 
 function nextQuestion(){
-    clearQuiz(); 
     counter++; 
     if(counter < quiz.quizLength){
+        clearQuiz(); 
         questionRemaining.innerHTML = (counter + 1);
         const nthQuiz = quiz.nthQuizResult(counter);
         question.innerHTML = quiz.question(nthQuiz);
