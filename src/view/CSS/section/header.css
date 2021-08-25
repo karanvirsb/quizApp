@@ -59,3 +59,21 @@
 }
 
 /* TODO create media query for smaller screens */
+
+@media (max-width: 600px) {
+    .nav__links{
+        display: none;
+    }
+    .header__nav{
+        position: relative;
+        width: 100%; 
+    }
+    .header__account{
+        display: none; 
+    }
+    .header__menu{
+        display: flex;
+        position: absolute;
+        right: 0%; 
+    }
+}
