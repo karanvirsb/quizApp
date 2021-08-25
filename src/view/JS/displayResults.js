@@ -31,6 +31,7 @@ function displayResults(){
     displayProgressBar(correct_amount,total_amount)
     const percentage = displayPercentage(correct_amount, total_amount); 
     displayQuote(percentage); 
+    displayGif(percentage); //todo 
 }
 
 function displayProgressBar(correctNum, totalNum){
