@@ -65,4 +65,5 @@ progress::-webkit-progress-value, progress::-moz-progress-bar{
     border: 1px ridge black; 
     border-top: none; 
     border-radius: 0px 0px 7px 7px;
+    padding: 1rem 0rem; 
 }
