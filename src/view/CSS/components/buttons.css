@@ -69,6 +69,10 @@
     width: max-content; 
 }
 
+#restart_quiz_btn:hover{
+    background: hsl(285, 10%, 77%);
+}
+
 #view_results_btn{
     background: hsl(285, 10%, 72%);
     border: none;
@@ -78,4 +82,8 @@
     padding: 0.5rem 1rem;  
     text-transform: uppercase; 
     width: max-content; 
+}
+
+##view_results_btn:hover{
+    background: hsl(285, 10%, 77%);
 }
