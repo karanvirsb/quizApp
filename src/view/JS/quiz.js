@@ -15,7 +15,7 @@ class Quiz {
 
     nthQuizResult(index){
         if(index < this.quizLength){
-            return this.quizArr[index];
+            return [this.quizArr[index], this.newQuizJson[index]];
         }
         return; 
     }
@@ -38,6 +38,7 @@ class Quiz {
             tempArr.done = false; 
             newJson.push(tempArr); 
         }
+        this.newQuizJson = newJson; 
         return newJson;
     }
 }
