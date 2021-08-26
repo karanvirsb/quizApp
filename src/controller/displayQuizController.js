@@ -43,11 +43,13 @@ function displayQuiz(quizArr){
         questionRemaining.innerHTML = (counter + 1);
 
         const nthQuiz = quiz.nthQuizResult(counter);
-        question.innerHTML = quiz.question(nthQuiz);
+        const newNthQuiz  = quiz.newNthQuizResult(counter);
+
+        question.innerHTML = quiz.question(newNthQuiz);
         quiz.getAnswer(nthQuiz); 
-        const quizOptions = quiz.options(nthQuiz);
+        // const quizOptions = quiz.options(nthQuiz);
        
-        displayOptions(quizOptions);
+        displayOptions(newNthQuiz.options);
         sessionStorage.clear(); 
     }
 }
@@ -72,13 +74,15 @@ function nextQuestion(){
     if(counter < quiz.quizLength){
         clearQuiz(); 
         questionRemaining.innerHTML = (counter + 1);
-        const nthQuiz = quiz.nthQuizResult(counter);
-        question.innerHTML = quiz.question(nthQuiz);
+        const nthQuiz= quiz.nthQuizResult(counter);
+        const newNthQuiz  = quiz.newNthQuizResult(counter);
+
+        question.innerHTML = quiz.question(newNthQuiz);
     
         quiz.getAnswer(nthQuiz); 
-        const quizOptions = quiz.options(nthQuiz);
+
         letter = 97; //todo reset letter func
-        displayOptions(quizOptions)
+        displayOptions(newNthQuiz.options)
     } else{
         sessionStorage.setItem('answersCorrect', questions_correct()); 
         sessionStorage.setItem('lengthOfQuiz', quiz.quizLength); 
