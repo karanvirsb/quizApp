@@ -39,7 +39,7 @@ class Quiz {
         let templateJson = '{"question":"","options":"", "picked":"", "done":""}';
         for(let i = 0; i < this.quizLength; i++){
             let tempArr = JSON.parse(templateJson);
-            const [tempQuiz,] = this.nthQuizResult(i);
+            const tempQuiz = this.nthQuizResult(i);
             tempArr.question = this.question(tempQuiz);
             tempArr.options = this.options(tempQuiz);
             tempArr.picked = 0; 
