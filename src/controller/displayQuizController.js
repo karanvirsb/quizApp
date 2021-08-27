@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if(next_btn){
         next_btn.addEventListener('click', () => {
             const isItWorking = isItCorrect(quiz.quizAnswer, getUserAnswer);
-            if(isItWorking !== -1){ 
+            if(isItWorking !== -1){
+                quiz.addPickedAnswer(counter, getUserAnswer);
                 nextQuestion(); 
             } else{
                 alert('Pick an answer even if you are unsure');
