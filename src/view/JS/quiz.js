@@ -52,7 +52,7 @@ class Quiz {
 
     addPickedAnswer(index, userAnswer){
         const usersChoice = userAnswer(); 
-        const quizResult = this.newNthQuizResult(index);
+        const quizResult = this.newQuizJson[index];
         quizResult.picked = usersChoice;
         quizResult.done = true; 
     }
