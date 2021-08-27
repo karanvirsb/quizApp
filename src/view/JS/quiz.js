@@ -46,13 +46,14 @@ class Quiz {
             tempArr.done = false; 
             newJson.push(tempArr); 
         }
-        this.newQuizJson = newJson; 
+        this.newQuizJson = newJson;
         return newJson;
     }
 
     addPickedAnswer(index, userAnswer){
+        const localJson = JSON.parse(localStorage.getItem('modified_quiz_json')) || []; 
         const usersChoice = userAnswer(); 
-        const quizResult = this.newQuizJson[index];
+        const quizResult = localJson[index];
         quizResult.picked = usersChoice;
         quizResult.done = true; 
     }
