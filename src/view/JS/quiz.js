@@ -49,4 +49,11 @@ class Quiz {
         this.newQuizJson = newJson; 
         return newJson;
     }
+
+    addPickedAnswer(index, userAnswer){
+        const usersChoice = userAnswer(); 
+        const quizResult = this.newNthQuizResult(index);
+        quizResult.picked = usersChoice;
+        quizResult.done = true; 
+    }
 }
