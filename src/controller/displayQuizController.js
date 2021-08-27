@@ -10,13 +10,17 @@ let quizArray = sessionStorage.getItem('quizJson');
 let quiz;
 
 document.addEventListener('DOMContentLoaded', () => {
-    collectElements();
-    quizArray = JSON.parse(quizArray);
-    displayQuiz(quizArray);
+    if(document.URL.includes('displayQuiz.html')){
+        collectElements();
+        quizArray = JSON.parse(quizArray);
+        quiz = new Quiz(quizArray);
+        localStorage.setItem('modified_quiz_json', JSON.stringify(quiz.newJson()))
+        displayQuiz();
+    }
 
     if(next_btn){
         next_btn.addEventListener('click', () => {
-            const isItWorking = isItCorrect(quiz.quizAnswer, getUserAnswer);
+            const isItWorking = isItCorrect(quiz.getCurrentAnswer(), getUserAnswer);
             if(isItWorking !== -1){
                 quiz.addPickedAnswer(counter, getUserAnswer);
                 nextQuestion(); 
@@ -35,11 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 }, true);
 
-function displayQuiz(quizArr){
-    if(quizArr){
-        quiz = new Quiz(quizArr); 
-        quiz_json = quiz.newJson();
-        
+function displayQuiz(){
+    const quizArr = JSON.parse(localStorage.getItem('modified_quiz_json')) || [];
+    if(quizArr !== []){ 
+        counter = checkWhichQuestionsDone(quizArr); 
         questionAmount.innerHTML = quizArr.length
         questionRemaining.innerHTML = (counter + 1);
 
@@ -145,6 +148,17 @@ function clearQuiz(){
     while(optionsDiv.firstChild){
         optionsDiv.firstChild.remove(); 
     }
+}
+
+function checkWhichQuestionsDone(quizArr){
+    let doneCounter = 0; 
+    const quizLength = quizArr.length; 
+    for(let i = 0; i < quizLength; i++){
+        if(quizArr[i].done === true){
+            doneCounter++;
+        }
+    }
+    return doneCounter; 
 }
 
 function addGlobalEventListener(selector,type,callback){
