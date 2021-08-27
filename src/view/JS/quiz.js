@@ -1,4 +1,5 @@
 class Quiz {
+    #quizAnswer; 
     constructor(arr){
         this.quizArr = arr || [];
         this.quizLength = this.quizArr.length || 0; 
@@ -7,6 +8,9 @@ class Quiz {
 
     getAnswer(quizArr){
         this.#quizAnswer = quizArr.correct_answer; 
+    }
+
+    getCurrentAnswer(){
         return this.#quizAnswer; 
     }
 
