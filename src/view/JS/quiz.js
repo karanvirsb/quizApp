@@ -1,5 +1,4 @@
 class Quiz {
-    #quizAnswer; 
     constructor(arr){
         this.quizArr = arr || JSON.parse(localStorage.getItem('modified_quiz_json')) || [];
         this.quizLength = this.quizArr.length || 0; 
@@ -7,13 +6,9 @@ class Quiz {
     }
 
     getAnswer(quizArr){
-        this.#quizAnswer = quizArr.correct_answer; 
+        return quizArr.correct_answer;  
     }
-
-    getCurrentAnswer(){
-        return this.#quizAnswer; 
-    }
-
+    
     question(quizArr){
         return quizArr.question;
     }
@@ -40,7 +35,7 @@ class Quiz {
 
     newJson(){
         let newJson = []; 
-        let templateJson = '{"question":"","options":"", "picked":"", "done":""}';
+        let templateJson = '{"question":"","options":"", "correct_answer":"", "picked":"", "done":""}';
         for(let i = 0; i < this.quizLength; i++){
             let tempArr = JSON.parse(templateJson);
             const tempQuiz = this.nthQuizResult(i);
@@ -48,6 +43,7 @@ class Quiz {
             tempArr.options = this.options(tempQuiz);
             tempArr.picked = 0; 
             tempArr.done = false; 
+            tempArr.correct_answer = this.getAnswer(tempQuiz);
             newJson.push(tempArr); 
         }
         localStorage.setItem('storing_done', 'false');  
