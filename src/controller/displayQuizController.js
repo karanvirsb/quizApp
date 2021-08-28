@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         collectElements();
         quizArray = JSON.parse(quizArray);
         quiz = new Quiz(quizArray);
-        localStorage.setItem('modified_quiz_json', JSON.stringify(quiz.newJson()))
+        toLocalStorage();
         displayQuiz();
     }
 
@@ -38,6 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 }, true);
+
+function toLocalStorage() {
+    let done = JSON.parse(localStorage.getItem('storing_done'));
+    if(!done){
+        localStorage.setItem('modified_quiz_json', JSON.stringify(quiz.newJson()));
+        localStorage.setItem('storing_done', 'true');  
+    }
+}
 
 function displayQuiz(){
     const quizArr = JSON.parse(localStorage.getItem('modified_quiz_json')) || [];
