@@ -8,6 +8,7 @@ let question;
 let optionsDiv;
 let quizArray = sessionStorage.getItem('quizJson'); 
 let quiz;
+let quizArr; 
 
 document.addEventListener('DOMContentLoaded', () => {
     if(document.URL.includes('displayQuiz.html')){
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(next_btn){
         next_btn.addEventListener('click', () => {
-            const isItWorking = isItCorrect(quiz.getCurrentAnswer(), getUserAnswer);
+            const isItWorking = isItCorrect(quizArr[counter].correct_answer, getUserAnswer);
             if(isItWorking !== -1){
                 quiz.addPickedAnswer(counter, getUserAnswer);
                 nextQuestion(); 
@@ -48,7 +49,7 @@ function toLocalStorage() {
 }
 
 function displayQuiz(){
-    const quizArr = JSON.parse(localStorage.getItem('modified_quiz_json')) || [];
+    quizArr = JSON.parse(localStorage.getItem('modified_quiz_json')) || [];
     if(quizArr !== []){ 
         counter = checkWhichQuestionsDone(quizArr); 
         questionAmount.innerHTML = quizArr.length
@@ -58,9 +59,7 @@ function displayQuiz(){
         const newNthQuiz  = quiz.newNthQuizResult(counter);
 
         question.innerHTML = quiz.question(newNthQuiz);
-        quiz.getAnswer(nthQuiz); 
-        // const quizOptions = quiz.options(nthQuiz);
-       
+
         displayOptions(newNthQuiz.options);
         sessionStorage.clear(); 
     }
@@ -90,8 +89,6 @@ function nextQuestion(){
         const newNthQuiz  = quiz.newNthQuizResult(counter);
 
         question.innerHTML = quiz.question(newNthQuiz);
-    
-        quiz.getAnswer(nthQuiz); 
 
         letter = 97; //todo reset letter func
         displayOptions(newNthQuiz.options)
