@@ -50,6 +50,25 @@ function displayQuote(percent){
     quotes.innerHTML = result; 
 }
 
+function displayGif(percent){
+    if(percent < 10){
+        
+    }
+
+    if(percent < 20)
+    if(percent < 30)
+    if(percent < 40)
+    if(percent < 50)
+    if(percent < 60)
+    if(percent < 70)
+    if(percent < 80)
+    if(percent < 90)
+
+    if(percent <= 100){
+
+    }
+}
+
 function getQuote(percent){
     if(percent < 10) return 'You can do better we believe in you 😃'
     if(percent < 20) return 'Thats great keep on going you can do it 👏'
