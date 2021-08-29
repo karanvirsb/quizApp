@@ -1,4 +1,4 @@
-const GIF_API_KEY = process.env.GIF_API_KEY; 
+const {GIF_API_KEY} = process.env; 
 const limit = 5; 
 const rating = 'g'
 let q = ''; 
