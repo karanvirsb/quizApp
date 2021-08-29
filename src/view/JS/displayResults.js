@@ -50,9 +50,13 @@ function displayQuote(percent){
     quotes.innerHTML = result; 
 }
 
-function displayGif(percent){
+async function displayGif(percent){
     if(percent < 10){
-        
+        const gifsJson = await getGif('you-can-do-better'); 
+        console.log(gifsJson)
+        if(gifsJson){
+            gif_container.setAttribute('src', gifsJson[0].url); 
+        }
     }
 
     if(percent < 20)
