@@ -32,3 +32,9 @@ hr.preview__hr{
     margin-bottom: 0.75rem; 
     width: 25%;
 }
+
+.finished__option{
+    padding: 0.75rem 1rem; 
+    margin: 1rem 0rem; 
+    outline: 1px solid black; 
+}
