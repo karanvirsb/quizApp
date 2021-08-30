@@ -16,6 +16,8 @@ hr.preview__hr{
 
 .preview__quiz{
     background: lightblue;
+    border: 1px solid black; 
+    border-radius: 5px;
     padding: 1rem; 
     margin: 1rem 0rem; 
 }
