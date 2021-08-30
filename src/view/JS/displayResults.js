@@ -52,24 +52,45 @@ function displayQuote(percent){
 
 async function displayGif(percent){
     if(percent < 10){
-        const gifsJson = await getGif('you-can-do-better'); 
-        console.log(gifsJson)
-        if(gifsJson){
-            gif_container.setAttribute('src', gifsJson[0].url); 
-        }
+        gif_container.setAttribute('src','https://media.giphy.com/media/gK2tnZtrkTxHusVLEO/giphy.gif?cid=ecf05e47n0nwnzxaxwz08ecdk6fdmq2qzfrs0obqdroy98ov&rid=giphy.gif&ct=g')
     }
 
-    if(percent < 20)
-    if(percent < 30)
-    if(percent < 40)
-    if(percent < 50)
-    if(percent < 60)
-    if(percent < 70)
-    if(percent < 80)
-    if(percent < 90)
+    if(percent < 20) {
+        gif_container.setAttribute('src',"")
+        gif_container.setAttribute('alt',"")
+    }
+    if(percent < 30){
+        gif_container.setAttribute('src',"")
+        gif_container.setAttribute('alt',"")
+    }
+    if(percent < 40) {
+        gif_container.setAttribute('src',"")
+        gif_container.setAttribute('alt',"")
+    }
+    if(percent < 50) {
+        gif_container.setAttribute('src',"")
+        gif_container.setAttribute('alt',"")
+    }
+    if(percent < 60) {
+        gif_container.setAttribute('src',"")
+        gif_container.setAttribute('alt',"")
+    }
+    if(percent < 70) {
+        gif_container.setAttribute('src',"")
+        gif_container.setAttribute('alt',"")
+    }
+    if(percent < 80) {
+        gif_container.setAttribute('src',"")
+        gif_container.setAttribute('alt',"")
+    }
+    if(percent < 90) {
+        gif_container.setAttribute('src',"")
+        gif_container.setAttribute('alt',"")
+    }
 
     if(percent <= 100){
-
+        gif_container.setAttribute('src',"")
+        gif_container.setAttribute('alt',"")
     }
 }
 
