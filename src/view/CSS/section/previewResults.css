@@ -18,3 +18,7 @@ hr.preview__hr{
     padding: 1rem; 
     margin: 1rem 0rem; 
 }
+
+.question{
+    font-size: clamp(1.15rem, 1.3vw, 1.5rem);
+}
