@@ -12,6 +12,18 @@ let view_results_btn;
 document.addEventListener('DOMContentLoaded', () => {
     collectResultElements();
     displayResults();
+
+    if(restart_btn){
+        restart_btn.addEventListener('click', ()=>{
+            
+        });
+    }
+
+    if(view_results_btn){
+        view_results_btn.addEventListener('click', ()=>{
+            
+        })
+    }
 });
 
 function collectResultElements(){
