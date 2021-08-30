@@ -1,0 +1,8 @@
+hr.preview__hr{
+    margin-bottom: 1rem; 
+    border: 1px solid hsla(100, 0%, 0%, 12%); 
+}
+.preview_results{
+    margin-top: 1rem;
+    padding-top: 1rem;  
+}
