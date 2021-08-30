@@ -16,6 +16,16 @@ random_btn.addEventListener('click', e => {
     e.preventDefault();
     const amount = generateAmount();
     retrieveQuiz(amount,'','',''); 
+});
+
+document.addEventListener('click', e =>{
+    if(e.target.matches('.explore__item')){
+       const elem = e.target;
+        retrieveQuiz(elem.dataset.amount, elem.dataset.category, elem.dataset.type, elem.dataset.difficulty)
+    } else if(e.target.parentElement.matches('.explore__item')){
+        const elem = e.target.parentElement; 
+        retrieveQuiz(elem.dataset.amount, elem.dataset.category, elem.dataset.type, elem.dataset.difficulty)
+    }
 })
 
 const retrieveQuiz = async (amount, category, type, difficulty) => {
