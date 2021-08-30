@@ -1,4 +1,5 @@
 const begin_btn = document.querySelector('#form_submit');
+const random_btn = document.querySelector('#random__btn');
 let quizJson = []; 
 
 begin_btn.addEventListener('click', e => {
@@ -11,6 +12,10 @@ begin_btn.addEventListener('click', e => {
     retrieveQuiz(amount, category, type, difficulty);
 }); 
 
+random_btn.addEventListener('click', () => {
+
+})
+
 const retrieveQuiz = async (amount, category, type, difficulty) => {
     await getData(+amount, category, type, difficulty).then((data) => { 
         sessionStorage.setItem('quizJson', JSON.stringify(data.results)); 
@@ -20,4 +25,20 @@ const retrieveQuiz = async (amount, category, type, difficulty) => {
 
 function changeWindow(){
     location.replace("../HTML/displayQuiz.html");
+}
+
+function generateAmount(){
+    
+}
+
+function generateDifficulty(){
+
+}
+
+function generateCategory(){
+
+}
+
+function generateType(){
+
 }
