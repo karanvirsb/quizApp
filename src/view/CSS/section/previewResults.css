@@ -9,7 +9,8 @@ hr.preview__hr{
 
 .preview__wrapper{
     padding: 1rem; 
-    outline: 1px solid black; 
+    border-left: 1px solid hsla(0, 0%, 0%, 0.250);
+    border-right: 1px solid hsla(0, 0%, 0%, 0.250);  
     max-width: 600px; 
 }
 
@@ -35,9 +36,9 @@ hr.preview__hr{
 
 .finished__option{
     border-radius: 5px;;
+    border: 1px solid black; 
     padding: 0.75rem 1rem; 
     margin: 1rem 0rem; 
-    outline: 1px solid black; 
 }
 
 .finished__answer{
