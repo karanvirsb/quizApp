@@ -1,6 +1,6 @@
 hr.preview__hr{
-    margin-bottom: 1rem; 
     border: 1px solid hsla(100, 0%, 0%, 12%); 
+    margin-bottom: 1rem; 
 }
 .preview_results{
     margin-top: 1rem;
@@ -8,6 +8,7 @@ hr.preview__hr{
 }
 
 .preview__wrapper{
+    padding: 1rem; 
     outline: 1px solid black; 
-    width: 70%; 
+    max-width: 600px; 
 }
