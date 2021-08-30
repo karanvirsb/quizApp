@@ -166,12 +166,5 @@ function checkWhichQuestionsDone(quizArr){
     return doneCounter; 
 }
 
-function addGlobalEventListener(selector,type,callback){
-    document.addEventListener(type, e => {
-        if(e.target.matches(selector)){
-            callback(e); 
-        }
-    });
-}
 
 
