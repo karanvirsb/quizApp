@@ -38,3 +38,7 @@ hr.preview__hr{
     margin: 1rem 0rem; 
     outline: 1px solid black; 
 }
+
+.finished__answer{
+    font-size: clamp(1.1rem, 1vw, 1.35rem);
+}
