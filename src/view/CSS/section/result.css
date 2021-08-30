@@ -23,7 +23,6 @@
 .result__header{
     background: hsl(122, 60%, 85%);
     border-bottom: 1px solid black; 
-    border-radius: 7px 7px 0px 0px;
     font-size: clamp(1.35rem, 2vw, 1.75rem);
     padding: 1rem 0rem; 
     text-align: center;
@@ -74,6 +73,5 @@ progress::-webkit-progress-value, progress::-moz-progress-bar{
 
 .result__footer{
     border-top: none; 
-    border-radius: 0px 0px 7px 7px;
     padding: 1rem 0rem; 
 }
