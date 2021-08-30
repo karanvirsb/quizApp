@@ -12,3 +12,9 @@ hr.preview__hr{
     outline: 1px solid black; 
     max-width: 600px; 
 }
+
+.preview__quiz{
+    background: lightblue;
+    padding: 1rem; 
+    margin: 1rem 0rem; 
+}
