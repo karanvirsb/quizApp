@@ -13,7 +13,12 @@ begin_btn.addEventListener('click', e => {
 }); 
 
 random_btn.addEventListener('click', () => {
+    const amount = generateAmount();
+    const category = generateCategory();
+    const difficulty = generateDifficulty();
+    const type = generateType();
 
+    retrieveQuiz(amount, category, type, difficulty); 
 })
 
 const retrieveQuiz = async (amount, category, type, difficulty) => {
@@ -28,17 +33,5 @@ function changeWindow(){
 }
 
 function generateAmount(){
-    
-}
-
-function generateDifficulty(){
-
-}
-
-function generateCategory(){
-
-}
-
-function generateType(){
 
 }
