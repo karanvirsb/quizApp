@@ -42,3 +42,16 @@ hr.preview__hr{
 .finished__answer{
     font-size: clamp(1.1rem, 1vw, 1.35rem);
 }
+
+.preview__correct::before{
+    content: '';
+    background: green;
+    display: block;
+    height: 2px;
+    margin-bottom: 0.5rem;
+    width: 25%; 
+}
+
+.preview__correct{
+    padding: 0.75rem 0rem; 
+}
