@@ -6,3 +6,8 @@ hr.preview__hr{
     margin-top: 1rem;
     padding-top: 1rem;  
 }
+
+.preview__wrapper{
+    outline: 1px solid black; 
+    width: 70%; 
+}
