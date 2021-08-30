@@ -6,6 +6,8 @@ let quotes;
 let gif_container; 
 let correct_amount;
 let total_amount;
+let restart_btn;
+let view_results_btn;
 
 document.addEventListener('DOMContentLoaded', () => {
     collectResultElements();
@@ -21,6 +23,8 @@ function collectResultElements(){
     gif_container =  document.querySelector('.gif_generator');
     correct_amount = sessionStorage.getItem('answersCorrect');
     total_amount = sessionStorage.getItem('lengthOfQuiz'); 
+    restart_btn = document.querySelector('#restart_quiz_btn')
+    view_results_btn = document.querySelector('#view_results_btn')
 }
 
 function displayResults(){
