@@ -60,3 +60,11 @@ hr.preview__hr{
 .is__correct{
     font-size: clamp(1.1rem, 1vw, 1.25rem);
 }
+
+.correct{
+    background: hsl(120, 40%, 50%);
+}
+
+.incorrect{
+    background: hsl(0, 70%, 65%);
+}
