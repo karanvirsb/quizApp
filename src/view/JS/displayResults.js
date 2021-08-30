@@ -50,47 +50,57 @@ function displayQuote(percent){
     quotes.innerHTML = result; 
 }
 
-async function displayGif(percent){
+function displayGif(percent){
     if(percent < 10){
         gif_container.setAttribute('src','https://media.giphy.com/media/gK2tnZtrkTxHusVLEO/giphy.gif?cid=ecf05e47n0nwnzxaxwz08ecdk6fdmq2qzfrs0obqdroy98ov&rid=giphy.gif&ct=g')
+        return; 
     }
 
     if(percent < 20) {
         gif_container.setAttribute('src',"https://media.giphy.com/media/l3mZcxZKIQemTeT9S/giphy.gif")
         gif_container.setAttribute('alt',"Keep going gif by CBC on giphy")
+        return; 
     }
     if(percent < 30){
         gif_container.setAttribute('src',"https://media.giphy.com/media/gbgJ5rRrLXltK/giphy.gif")
         gif_container.setAttribute('alt',"Prove them wrong climbing cartoon by disney on giphy")
+        return; 
     }
     if(percent < 40) {
         gif_container.setAttribute('src',"https://media.giphy.com/media/JhOAQxvBafrIA/giphy.gif")
         gif_container.setAttribute('alt',"child running trying to keep up by liveleak on giphy")
+        return; 
     }
     if(percent < 50) {
         gif_container.setAttribute('src',"https://media.giphy.com/media/LMny8mw5VnvyKln1Jt/giphy.gif")
         gif_container.setAttribute('alt',"Squirrel reaching out almost to the food by memecandy on giphy")
+        return; 
     }
     if(percent < 60) {
         gif_container.setAttribute('src',"https://media.giphy.com/media/l0ExcS4a762Pofpio/giphy.gif")
         gif_container.setAttribute('alt',"person saying half way there by The Academy awards on giphy")
+        return; 
     }
     if(percent < 70) {
         gif_container.setAttribute('src',"https://media.giphy.com/media/0A477fjlRXL1n2LVgJ/giphy.gif")
         gif_container.setAttribute('alt',"Push Push Push by peloton on giphy")
+        return; 
     }
     if(percent < 80) {
         gif_container.setAttribute('src',"https://media.giphy.com/media/3o7TKJhGApeCNczefu/giphy.gif")
         gif_container.setAttribute('alt',"Monkey saying average human being like the rest by South Park on giphy")
+        return; 
     }
     if(percent < 90) {
         gif_container.setAttribute('src',"https://media.giphy.com/media/5OlPNU1c8MhBZDhU7U/giphy.gif")
         gif_container.setAttribute('alt',"Person saying I am above average by HBO max on giphy")
+        return; 
     }
 
     if(percent <= 100){
         gif_container.setAttribute('src',"https://media.giphy.com/media/aTuRYPaiIbrfskpXO9/giphy.gif")
         gif_container.setAttribute('alt',"built different by SportsManias on giphy")
+        return; 
     }
 }
 
