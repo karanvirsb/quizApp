@@ -37,6 +37,10 @@
     width: 90%; 
 }
 
+.gif_generator{
+    padding: 1.5rem;
+}
+
 .progress__percent{
     font-size: clamp(1.25rem, 2vw, 1.75rem);
 }
