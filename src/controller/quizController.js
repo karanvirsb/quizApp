@@ -12,13 +12,10 @@ begin_btn.addEventListener('click', e => {
     retrieveQuiz(amount, category, type, difficulty);
 }); 
 
-random_btn.addEventListener('click', () => {
+random_btn.addEventListener('click', e => {
+    e.preventDefault();
     const amount = generateAmount();
-    const category = generateCategory();
-    const difficulty = generateDifficulty();
-    const type = generateType();
-
-    retrieveQuiz(amount, category, type, difficulty); 
+    retrieveQuiz(amount,'','',''); 
 })
 
 const retrieveQuiz = async (amount, category, type, difficulty) => {
@@ -33,5 +30,13 @@ function changeWindow(){
 }
 
 function generateAmount(){
+    return Math.floor(Math.random() * (25 - 1 + 1) + 1);
+}
 
+function addGlobalEventListener(selector,type,callback){
+    document.addEventListener(type, e => {
+        if(e.target.matches(selector)){
+            callback(e); 
+        }
+    });
 }
