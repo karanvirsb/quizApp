@@ -10,6 +10,7 @@ let restart_btn;
 let view_results_btn;
 let preview_section; 
 let preview_wrapper;
+let finishedLetters = 97; 
 
 document.addEventListener('DOMContentLoaded', () => {
     collectResultElements();
@@ -163,6 +164,12 @@ function createFinishedOption(option){
     const pOption = document.createElement('p');
     pOption.classList.add('finished__answer'); 
     pOption.innerHTML = getLetter() + ". " + option; 
+}
+
+function getLetter(){
+    const tempLetter = finishedLetters;
+    finishedLetters++; 
+    return String.fromCharCode(tempLetter);
 }
 
 // function clearStorage() {
