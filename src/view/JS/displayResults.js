@@ -1,5 +1,3 @@
-import backToDefault from 'restartQuizController.js';  
-
 let total_questions;
 let correct_questions; 
 let progress_percent; 
@@ -21,7 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(restart_btn){
         restart_btn.addEventListener('click', ()=>{
-            backToDefault(modified_json); 
+            const localArr = backToDefault(modified_json);
+            localStorage.setItem('modified_quiz_json', JSON.stringify(localArr));  
             location.replace("../HTML/displayQuiz.html");
         });
     }
