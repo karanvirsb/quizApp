@@ -156,7 +156,7 @@ function addQuizResults(arr){
             for(let j = 0; j < qArray.options.length; j++){
                 const finishedOptionDiv = document.createElement('div');
                 finishedOptionDiv.classList.add('finished__option');
-                if(qArray.was_it_correct === 1){
+                if(qArray.was_it_correct === true){
                     finishedOptionDiv.classList.add('correct');
                 }
                 else{
