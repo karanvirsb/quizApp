@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
             preview_section.style.display = 'block';
         })
     }
+
+    const modified_json = JSON.parse(localStorage.getItem('modified_quiz_json')); 
+    addQuizResults(modified_json); 
 });
 
 function collectResultElements(){
@@ -154,6 +157,7 @@ function addQuizResults(arr){
             optionsContainer.classList.add('options__container'); 
 
             for(let j = 0; j < qArray.options.length; j++){
+                //todo error here need to add pciked answer as correct or incorrect 
                 const finishedOptionDiv = document.createElement('div');
                 finishedOptionDiv.classList.add('finished__option');
                 if(qArray.was_it_correct === true){
@@ -174,7 +178,7 @@ function addQuizResults(arr){
             answerContainer.append(qAnswer);
 
             container.append(pQuestion);
-            container.appened(optionsContainer); 
+            container.append(optionsContainer); 
 
             if(qAnswer){
                 container.append(answerContainer); 
@@ -189,6 +193,7 @@ function createFinishedOption(option){
     const pOption = document.createElement('p');
     pOption.classList.add('finished__answer'); 
     pOption.innerHTML = getLetter() + ". " + option; 
+    return pOption; 
 }
 
 function getLetter(){
