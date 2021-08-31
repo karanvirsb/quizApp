@@ -1,3 +1,5 @@
+import backToDefault from 'restartQuizController.js';  
+
 let total_questions;
 let correct_questions; 
 let progress_percent; 
@@ -11,6 +13,7 @@ let view_results_btn;
 let preview_section; 
 let preview_wrapper;
 let finishedLetters = 97; 
+const modified_json = JSON.parse(localStorage.getItem('modified_quiz_json')) || []; 
 
 document.addEventListener('DOMContentLoaded', () => {
     collectResultElements();
@@ -18,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(restart_btn){
         restart_btn.addEventListener('click', ()=>{
-            
+            backToDefault(modified_json); 
+            location.replace("../HTML/displayQuiz.html");
         });
     }
 
@@ -28,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    const modified_json = JSON.parse(localStorage.getItem('modified_quiz_json')); 
     addQuizResults(modified_json); 
 });
 
