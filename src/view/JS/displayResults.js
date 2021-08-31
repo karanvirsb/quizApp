@@ -141,13 +141,15 @@ function getQuote(percent){
 function addQuizResults(arr){
     if(arr){
         for(let i = 0; i < arr.length; i++){
+            let qAnswer; 
             const qArray = arr[i]; 
+
             const container = document.createElement('div');
             container.classList.add('preview__quiz'); 
 
             const pQuestion = document.createElement('p');
             pQuestion.innerHTML = 'Question: ' + qArray.question;
-            
+
             const optionsContainer = document.createElement('div');
             optionsContainer.classList.add('options__container'); 
 
@@ -159,10 +161,26 @@ function addQuizResults(arr){
                 }
                 else{
                     finishedOptionDiv.classList.add('incorrect'); 
+                    qAnswer = document.createElement('p');
+                    qAnswer.classList.add('is__correct'); 
+                    qAnswer.innerHTML = 'Answer: ' + qArray.correct_answer; 
                 }
                 finishedOptionDiv.append(createFinishedOption(qArray.options[j]))
                 optionsContainer.append(finishedOptionDiv);
+
             }
+            const answerContainer = document.createElement('div');
+            answerContainer.classList.add('preview__correct');
+            answerContainer.append(qAnswer);
+
+            container.append(pQuestion);
+            container.appened(optionsContainer); 
+
+            if(qAnswer){
+                container.append(answerContainer); 
+            }
+
+            preview_wrapper.append(container); 
         }
     }
 }
