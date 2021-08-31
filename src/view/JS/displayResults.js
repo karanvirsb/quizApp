@@ -144,6 +144,7 @@ function getQuote(percent){
 function addQuizResults(arr){
     if(arr){
         for(let i = 0; i < arr.length; i++){
+            let qAnswer; 
             const qArray = arr[i]; 
 
             const container = document.createElement('div');
@@ -159,9 +160,10 @@ function addQuizResults(arr){
                 //todo error here need to add pciked answer as correct or incorrect 
                 const finishedOptionDiv = document.createElement('div');
                 finishedOptionDiv.classList.add('finished__option');
-                finishedOptionDiv.append(createFinishedOption(qArray.options[j], finishedOptionDiv, qArray))
+                const [ans, opt] = createFinishedOption(qArray.options[j], finishedOptionDiv, qArray);
+                qAnswer = ans; 
+                finishedOptionDiv.append(opt)
                 optionsContainer.append(finishedOptionDiv);
-
             }
             const answerContainer = document.createElement('div');
             answerContainer.classList.add('preview__correct');
@@ -195,7 +197,7 @@ function createFinishedOption(option, div, arr){
     }
 
     pOption.innerHTML = getLetter() + ". " + option; 
-    return [div, qAnswer, pOption]; 
+    return [qAnswer, pOption]; 
 }
 
 function getLetter(){
