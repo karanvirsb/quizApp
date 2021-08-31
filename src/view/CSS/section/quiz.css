@@ -1,5 +1,6 @@
 .quiz{
     width: 100%; 
+    padding: 0rem 1rem; 
 }
 .quiz__header{
     border-bottom: 2px solid black;
