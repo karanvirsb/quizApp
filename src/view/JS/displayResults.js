@@ -144,6 +144,7 @@ function getQuote(percent){
 function addQuizResults(arr){
     if(arr){
         for(let i = 0; i < arr.length; i++){
+            finishedLetters = 97; 
             let qAnswer; 
             const qArray = arr[i]; 
 
@@ -197,7 +198,6 @@ function createFinishedOption(option, div, arr){
         qAnswer.classList.add('is__correct'); 
         qAnswer.innerHTML = 'Answer: ' + arr.correct_answer; 
     }
-
     pOption.innerHTML = getLetter() + ". " + option; 
     return [qAnswer, pOption]; 
 }
