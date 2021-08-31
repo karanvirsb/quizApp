@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const isItWorking = isItCorrect(quizArr[counter].correct_answer, getUserAnswer);
             if(isItWorking !== -1){
                 quiz.addPickedAnswer(counter, getUserAnswer);
-                quiz.wasItCorrect(coutner, isItWorking); 
+                quiz.wasItCorrect(counter, isItWorking); 
                 nextQuestion(); 
             } else{
                 alert('Pick an answer even if you are unsure');
