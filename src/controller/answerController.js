@@ -8,8 +8,12 @@ function isItCorrect(answer, userAnswer){
         default:
         if(answer === userAns){
             correct++; 
+            return 1;
+        }else{
+            return 0; 
         }
     }
+    
 }
 
 function questions_correct(){
