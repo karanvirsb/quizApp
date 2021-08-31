@@ -58,4 +58,15 @@ class Quiz {
         localJson[index].done = true; 
         localStorage.setItem('modified_quiz_json', JSON.stringify(localJson))
     }
+
+    wasItCorrect(index, num){
+        const localJson = JSON.parse(localStorage.getItem('modified_quiz_json')) || []; 
+        if(num === 0){
+            localJson[index].was_it_correct = false;
+        } else{
+            localJson[index].was_it_correct = true;
+        }
+        
+        localStorage.setItem('modified_quiz_json', JSON.stringify(localJson))
+    }
 }
