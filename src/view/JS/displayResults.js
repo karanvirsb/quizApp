@@ -140,11 +140,29 @@ function getQuote(percent){
 function addQuizResults(arr){
     if(arr){
         for(let i = 0; i < arr.length; i++){
+            const qArray = arr[i]; 
             const container = document.createElement('div');
             container.classList.add('preview__quiz'); 
+
+            const pQuestion = document.createElement('p');
+            pQuestion.innerHTML = 'Question: ' + qArray.question;
             
+            const optionsContainer = document.createElement('div');
+            optionsContainer.classList.add('options__container'); 
+
+            for(let j = 0; j < qArray.options.length; j++){
+                const finishedOptionDiv = createFinishedOption(qArray.options[j])
+                finishedOptionDiv.classList.add('finished__option');
+                optionsContainer.append(finishedOptionDiv);
+            }
         }
     }
+}
+
+function createFinishedOption(option){
+    const pOption = document.createElement('p');
+    pOption.classList.add('finished__answer'); 
+    pOption.innerHTML = getLetter() + ". " + option; 
 }
 
 // function clearStorage() {
