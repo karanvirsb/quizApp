@@ -137,6 +137,16 @@ function getQuote(percent){
     if(percent <= 100) return 'Thats excellent you pushed really hard heres some 🍬' 
 }
 
+function addQuizResults(arr){
+    if(arr){
+        for(let i = 0; i < arr.length; i++){
+            const container = document.createElement('div');
+            container.classList.add('preview__quiz'); 
+            
+        }
+    }
+}
+
 // function clearStorage() {
 
 //     let session = sessionStorage.getItem('ref');
