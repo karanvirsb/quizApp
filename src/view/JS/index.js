@@ -9,7 +9,7 @@ menu_btn.addEventListener('click', ()=>{
 
 document.addEventListener('click', e => {
     if(!header.contains(e.target)){
-        nav_links.style.display = 'none'; 
+        nav_links.style.display = ''; 
         menu_btn.style.display = '';
     }
 });
