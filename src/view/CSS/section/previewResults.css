@@ -3,11 +3,13 @@ hr.preview__hr{
     margin-bottom: 1rem; 
 }
 .preview_results{
+    display: none; 
     margin-top: 1rem;
     padding-top: 1rem;  
 }
 
 .preview__wrapper{
+    display: none; 
     padding: 1rem; 
     border-left: 1px solid hsla(0, 0%, 0%, 0.250);
     border-right: 1px solid hsla(0, 0%, 0%, 0.250);  
