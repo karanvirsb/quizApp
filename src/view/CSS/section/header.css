@@ -61,11 +61,28 @@
 /* TODO create media query for smaller screens */
 
 @media (max-width: 600px) {
+    .header{
+        padding: 0.75rem 1rem; 
+    }
+    .nav{
+        width: 100%;
+    }
     .nav__links{
         display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav__links a{
+        width: 100%; 
+        text-align: center;
     }
     .header__nav{
         position: relative;
+        display: flex;
+        flex-direction: column;
         width: 100%; 
     }
     .header__account{
