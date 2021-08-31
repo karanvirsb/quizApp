@@ -8,6 +8,8 @@ let correct_amount;
 let total_amount;
 let restart_btn;
 let view_results_btn;
+let preview_section; 
+let preview_wrapper;
 
 document.addEventListener('DOMContentLoaded', () => {
     collectResultElements();
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(view_results_btn){
         view_results_btn.addEventListener('click', ()=>{
-            
+            preview_section.style.display = 'block';
         })
     }
 });
@@ -35,8 +37,10 @@ function collectResultElements(){
     gif_container =  document.querySelector('.gif_generator');
     correct_amount = sessionStorage.getItem('answersCorrect');
     total_amount = sessionStorage.getItem('lengthOfQuiz'); 
-    restart_btn = document.querySelector('#restart_quiz_btn')
-    view_results_btn = document.querySelector('#view_results_btn')
+    restart_btn = document.querySelector('#restart_quiz_btn');
+    view_results_btn = document.querySelector('#view_results_btn');
+    preview_section = document.querySelector('.preview_results');
+    preview_wrapper = document.querySelector('.preview__wrapper');
 }
 
 function displayResults(){
