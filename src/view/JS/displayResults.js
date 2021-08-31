@@ -161,7 +161,9 @@ function addQuizResults(arr){
                 const finishedOptionDiv = document.createElement('div');
                 finishedOptionDiv.classList.add('finished__option');
                 const [ans, opt] = createFinishedOption(qArray.options[j], finishedOptionDiv, qArray);
-                qAnswer = ans; 
+                if(ans){
+                    qAnswer = ans; 
+                }
                 finishedOptionDiv.append(opt)
                 optionsContainer.append(finishedOptionDiv);
             }
@@ -193,7 +195,7 @@ function createFinishedOption(option, div, arr){
         div.classList.add('incorrect'); 
         qAnswer = document.createElement('p');
         qAnswer.classList.add('is__correct'); 
-        qAnswer.innerHTML = 'Answer: ' + qArray.correct_answer; 
+        qAnswer.innerHTML = 'Answer: ' + arr.correct_answer; 
     }
 
     pOption.innerHTML = getLetter() + ". " + option; 
