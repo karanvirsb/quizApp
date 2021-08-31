@@ -11,7 +11,7 @@
     position: absolute;
     text-transform: uppercase;
     transform: translateX(-50%);
-    width: 250px;
+    width: min(50vw, 250px);
 }
 
 #form_submit:hover{
