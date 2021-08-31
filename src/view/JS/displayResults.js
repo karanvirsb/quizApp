@@ -151,6 +151,7 @@ function addQuizResults(arr){
             container.classList.add('preview__quiz'); 
 
             const pQuestion = document.createElement('p');
+            pQuestion.classList.add('question');
             pQuestion.innerHTML = 'Question: ' + qArray.question;
 
             const optionsContainer = document.createElement('div');
