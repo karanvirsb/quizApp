@@ -152,8 +152,15 @@ function addQuizResults(arr){
             optionsContainer.classList.add('options__container'); 
 
             for(let j = 0; j < qArray.options.length; j++){
-                const finishedOptionDiv = createFinishedOption(qArray.options[j])
+                const finishedOptionDiv = document.createElement('div');
                 finishedOptionDiv.classList.add('finished__option');
+                if(qArray.was_it_correct === 1){
+                    finishedOptionDiv.classList.add('correct');
+                }
+                else{
+                    finishedOptionDiv.classList.add('incorrect'); 
+                }
+                finishedOptionDiv.append(createFinishedOption(qArray.options[j]))
                 optionsContainer.append(finishedOptionDiv);
             }
         }
