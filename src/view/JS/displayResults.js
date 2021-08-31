@@ -144,7 +144,6 @@ function getQuote(percent){
 function addQuizResults(arr){
     if(arr){
         for(let i = 0; i < arr.length; i++){
-            let qAnswer; 
             const qArray = arr[i]; 
 
             const container = document.createElement('div');
@@ -160,16 +159,7 @@ function addQuizResults(arr){
                 //todo error here need to add pciked answer as correct or incorrect 
                 const finishedOptionDiv = document.createElement('div');
                 finishedOptionDiv.classList.add('finished__option');
-                if(qArray.was_it_correct === true){
-                    finishedOptionDiv.classList.add('correct');
-                }
-                else{
-                    finishedOptionDiv.classList.add('incorrect'); 
-                    qAnswer = document.createElement('p');
-                    qAnswer.classList.add('is__correct'); 
-                    qAnswer.innerHTML = 'Answer: ' + qArray.correct_answer; 
-                }
-                finishedOptionDiv.append(createFinishedOption(qArray.options[j]))
+                finishedOptionDiv.append(createFinishedOption(qArray.options[j], finishedOptionDiv, qArray))
                 optionsContainer.append(finishedOptionDiv);
 
             }
@@ -189,11 +179,23 @@ function addQuizResults(arr){
     }
 }
 
-function createFinishedOption(option){
+function createFinishedOption(option, div, arr){
+    let qAnswer; 
     const pOption = document.createElement('p');
     pOption.classList.add('finished__answer'); 
+    
+    if(arr.was_it_correct === true && option === arr.picked){
+        div.classList.add('correct');
+    }
+    else if(arr.was_it_correct === false && option === arr.picked){
+        div.classList.add('incorrect'); 
+        qAnswer = document.createElement('p');
+        qAnswer.classList.add('is__correct'); 
+        qAnswer.innerHTML = 'Answer: ' + qArray.correct_answer; 
+    }
+
     pOption.innerHTML = getLetter() + ". " + option; 
-    return pOption; 
+    return [div, qAnswer, pOption]; 
 }
 
 function getLetter(){
