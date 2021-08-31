@@ -67,6 +67,7 @@
     .nav{
         width: 100%;
     }
+    
     .nav__links{
         display: none;
         flex-direction: column;
