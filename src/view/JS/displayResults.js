@@ -189,10 +189,10 @@ function createFinishedOption(option, div, arr){
     pOption.classList.add('finished__answer'); 
     
     if(arr.was_it_correct === true && option === arr.picked){
-        div.classList.add('correct');
+        div.classList.add('correct_answer');
     }
     else if(arr.was_it_correct === false && option === arr.picked){
-        div.classList.add('incorrect'); 
+        div.classList.add('incorrect_answer'); 
         qAnswer = document.createElement('p');
         qAnswer.classList.add('is__correct'); 
         qAnswer.innerHTML = 'Answer: ' + arr.correct_answer; 
