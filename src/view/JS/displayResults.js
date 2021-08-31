@@ -157,7 +157,6 @@ function addQuizResults(arr){
             optionsContainer.classList.add('options__container'); 
 
             for(let j = 0; j < qArray.options.length; j++){
-                //todo error here need to add pciked answer as correct or incorrect 
                 const finishedOptionDiv = document.createElement('div');
                 finishedOptionDiv.classList.add('finished__option');
                 const [ans, opt] = createFinishedOption(qArray.options[j], finishedOptionDiv, qArray);
