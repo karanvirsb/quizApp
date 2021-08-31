@@ -45,6 +45,7 @@ img{
 
 .grid{
     display: grid; 
+    min-width: max-content;
 }
 
 .loader__wrapper{
