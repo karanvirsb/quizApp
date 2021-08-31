@@ -9,7 +9,6 @@ hr.preview__hr{
 }
 
 .preview__wrapper{
-    display: none; 
     padding: 1rem; 
     border-left: 1px solid hsla(0, 0%, 0%, 0.250);
     border-right: 1px solid hsla(0, 0%, 0%, 0.250);  
