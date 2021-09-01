@@ -19,10 +19,17 @@
     text-decoration: none;
 }
 
+.explore__wrapper{
+    border-radius: 5px;
+    max-height: 150px;
+    position: relative;
+}
+
 .explore__container{
     background: hsl(215, 41%, 15%);
-    height: 150px;
-    padding: 1rem 0rem 10rem 0.5rem; 
+    border-radius: 5px;
+    height: inherit;
+    padding: 1rem 0rem 1rem 0.5rem; 
     position: relative;
     /* outline: 1px solid gray;  */
     scroll-behavior: smooth;
@@ -38,6 +45,7 @@
     height: inherit;
     left: 0%; 
     position: absolute;
+    z-index: 99;
 }
 
 .explore__back:hover{
@@ -53,6 +61,7 @@
     height: inherit;
     right: 0%;
     position: absolute;
+    z-index: 99;
 }
 
 .explore__forward:hover{
