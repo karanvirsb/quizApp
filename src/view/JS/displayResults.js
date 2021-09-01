@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(view_results_btn){
         view_results_btn.addEventListener('click', ()=>{
             preview_section.style.display = 'block';
+            preview_section.scrollIntoView();
         })
     }
 
