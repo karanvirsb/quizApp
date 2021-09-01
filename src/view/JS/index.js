@@ -17,3 +17,10 @@ document.addEventListener('click', e => {
     }
 });
 
+explore_btn_back.addEventListener('click', () =>{
+    explore__container.scrollLeft -= 150; 
+})
+
+explore_btn_forwards.addEventListener('click', () => {
+    explore__container.scrollLeft += 150; 
+})
