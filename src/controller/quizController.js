@@ -30,8 +30,10 @@ document.addEventListener('click', e =>{
 
 const retrieveQuiz = async (amount, category, type, difficulty) => {
     await getData(+amount, category, type, difficulty).then((data) => { 
-        sessionStorage.setItem('quizJson', JSON.stringify(data.results)); 
-        changeWindow(); 
+        if(data !== -1){
+            sessionStorage.setItem('quizJson', JSON.stringify(data.results)); 
+            changeWindow(); 
+        }
     }).catch((err) => console.log(err));
 }
 
