@@ -1,7 +1,7 @@
 const url = "https://opentdb.com/api.php?"; 
 
 const getData = async (amount = '', category = '', type = "", difficulty = "") =>{
-    console.log(url + 'amount=' + amount + '&category=' + category + '&difficulty=' + difficulty +  '&type=' + type); 
+    // console.log(url + 'amount=' + amount + '&category=' + category + '&difficulty=' + difficulty +  '&type=' + type); 
     try {
         const resp = await fetch(url + 'amount=' + amount + '&category=' + category + '&difficulty=' + difficulty +  '&type=' + type); 
         if(!resp.ok){
@@ -11,7 +11,7 @@ const getData = async (amount = '', category = '', type = "", difficulty = "") =
         }
         const quizJson = await resp.json();
         if(quizJson.response_code !== 0){
-            const msg = `No Results Could not return results. The App doesn't have enough questions for the parameters given. \n Try Again ${quizJson.response_code}`;
+            const msg = `Could not return results. The App doesn't have enough questions for the parameters given.`;
             alert(msg); 
             return -1;  
         }
