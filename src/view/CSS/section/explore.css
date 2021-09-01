@@ -1,5 +1,5 @@
 :root{
-    --btn-bg: white; 
+    --btn-bg: transparent; 
     --btn-font: 30px; 
     --btn-width: 30px; 
 }
@@ -36,6 +36,7 @@
 
 .explore__back{
     background: var(--btn-bg);
+    color: white;
     border-radius: 5px;    
     cursor: pointer;
     font-size: var(--btn-font);
@@ -48,10 +49,12 @@
 
 .explore__back:hover{
     background: hsl(0, 0%, 85%);
+    color: black;
 }
 
 .explore__forward{
     background: var(--btn-bg);
+    color: white;
     border-radius: 5px;
     cursor: pointer;
     font-size: var(--btn-font);    
@@ -64,6 +67,7 @@
 
 .explore__forward:hover{
     background: hsl(0, 0%, 85%);
+    color: black;
 }
 
 .explore__item{
