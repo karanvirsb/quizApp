@@ -1,6 +1,9 @@
 const header = document.querySelector('.header')
 const menu_btn = document.querySelector('.header__menu');
 const nav_links = document.querySelector('.nav__links');
+const explore_btn_back = document.querySelector('.explore__back')
+const explore_btn_forwards = document.querySelector('.explore__forward');
+const explore__container = document.querySelector('.explore__container');
 
 menu_btn.addEventListener('click', ()=>{
     nav_links.style.display = 'flex'; 
@@ -13,3 +16,4 @@ document.addEventListener('click', e => {
         menu_btn.style.display = '';
     }
 });
+
