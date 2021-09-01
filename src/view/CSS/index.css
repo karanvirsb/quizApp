@@ -10,6 +10,10 @@
     margin: 0px; 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--body-bg);
     font-family: 'Roboto', monospace, sans-serif;
