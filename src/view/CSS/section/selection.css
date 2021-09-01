@@ -34,6 +34,7 @@
     cursor: pointer;
     font-size: clamp(1.1rem, 1vw, 2rem);
     height: 40px;
+    padding: 0.25rem 0rem 0.25rem 1rem; 
     width: min(50vw, 250px); 
 }
 
