@@ -85,3 +85,19 @@
     font-size: 1.5rem;
     text-align: center;
 }
+
+@media (max-width: 600px){
+    .explore__container{
+        padding: 1rem;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .explore__back{
+        display: none;
+    }
+    .explore__forward{
+        display: none;
+    }
+}
