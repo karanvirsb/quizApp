@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(quit_btn){
         quit_btn.addEventListener('click', () => {
-            if(alert('Are you sure you want to quit?')){
+            if(confirm('Are you sure you want to quit?')){
                 location.replace('../HTML/index.html');
             }
         })
