@@ -72,7 +72,8 @@
 }
 
 .explore__item{
-    background: hsl(5, 95%, 77%);
+    /* background: hsl(5, 95%, 77%); */
+    background: hsl(328, 11%, 77%);
     border-radius: 5px; 
     cursor: pointer;
     flex-shrink: 0;
@@ -83,7 +84,7 @@
 }
 
 .explore__item:hover{
-    background: hsl(5, 90%, 70%); 
+    background: hsl(328, 11%, 67%); 
 }
 
 .explore__item--header{
