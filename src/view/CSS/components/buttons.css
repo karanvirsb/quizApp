@@ -109,6 +109,7 @@
     bottom: 5%;
     color: white; 
     cursor: pointer;
+    display: none;
     height: min(8vw, 50px);
     min-height: 35px;
     min-width: 35px;
