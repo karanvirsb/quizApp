@@ -106,6 +106,7 @@
 
 #to_top_btn{
     background: hsl(212, 14%, 19%);
+    bottom: 5%;
     color: white; 
     cursor: pointer;
     height: min(8vw, 50px);
@@ -113,6 +114,7 @@
     min-width: 35px;
     padding: 1rem;
     position: absolute;
+    right: 5%; 
     width: min(8vw,50px);
 }
 
@@ -121,5 +123,5 @@
 }
 
 #to_top_btn p{
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-size: clamp(1.5rem, 5vw, 2.25rem);
 }
