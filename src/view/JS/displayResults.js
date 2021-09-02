@@ -85,7 +85,7 @@ function collectResultElements(){
     preview_section = document.querySelector('.preview_results');
     preview_wrapper = document.querySelector('.preview__wrapper');
     to_top_btn = document.querySelector('#to_top_btn'); 
-    header = document.querySelector('.header'); 
+    main_header = document.querySelector('.header'); 
 }
 
 function displayResults(){
