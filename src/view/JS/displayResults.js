@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             preview_section.style.display = 'block';
             preview_section.scrollIntoView();
             view_results_btn.style.display = 'none'; 
+            hide_results_btn.style.display = 'inline';
         })
     }
 
@@ -62,7 +63,6 @@ function collectResultElements(){
 }
 
 function displayResults(){
-    console.log(total_amount, correct_amount);
     total_questions.innerHTML = total_amount;
     correct_questions.innerHTML = correct_amount; 
 
