@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(to_top_btn){
         to_top_btn.addEventListener('click', () => {
-
+            header.scrollIntoView(); 
         });
     }
 
