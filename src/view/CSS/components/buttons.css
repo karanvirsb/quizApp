@@ -87,3 +87,19 @@
 #view_results_btn:hover{
     background: hsl(285, 10%, 77%);
 }
+
+#hide_results_btn{
+    display: none; 
+    background: hsl(285, 10%, 72%);
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.5rem 1rem;  
+    text-transform: uppercase; 
+    width: max-content; 
+}
+
+#hide_results_btn:hover{
+    background: hsl(285, 10%, 77%);
+}
