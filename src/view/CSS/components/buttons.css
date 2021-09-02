@@ -113,7 +113,7 @@
     min-height: 35px;
     min-width: 35px;
     padding: 1rem;
-    position: absolute;
+    position: fixed;
     right: 5%; 
     width: min(8vw,50px);
 }
