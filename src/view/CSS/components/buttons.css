@@ -103,3 +103,23 @@
 #hide_results_btn:hover{
     background: hsl(285, 10%, 77%);
 }
+
+#to_top_btn{
+    background: hsl(212, 14%, 19%);
+    color: white; 
+    cursor: pointer;
+    height: min(8vw, 50px);
+    min-height: 35px;
+    min-width: 35px;
+    padding: 1rem;
+    position: absolute;
+    width: min(8vw,50px);
+}
+
+#to_top_btn:hover{
+    background: hsl(212, 14%, 19%);
+}
+
+#to_top_btn p{
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
