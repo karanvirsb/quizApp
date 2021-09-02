@@ -8,6 +8,7 @@ let correct_amount;
 let total_amount;
 let restart_btn;
 let view_results_btn;
+let hide_results_btn; 
 let preview_section; 
 let preview_wrapper;
 let finishedLetters = 97; 
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         view_results_btn.addEventListener('click', ()=>{
             preview_section.style.display = 'block';
             preview_section.scrollIntoView();
+            view_results_btn.style.display = 'none'; 
         })
     }
 
@@ -46,6 +48,7 @@ function collectResultElements(){
     total_amount = sessionStorage.getItem('lengthOfQuiz'); 
     restart_btn = document.querySelector('#restart_quiz_btn');
     view_results_btn = document.querySelector('#view_results_btn');
+    hide_results_btn = document.querySelector('#hide_results_btn'); 
     preview_section = document.querySelector('.preview_results');
     preview_wrapper = document.querySelector('.preview__wrapper');
 }
