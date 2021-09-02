@@ -51,6 +51,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    let pageMoved = (callback) => {
+        window.setTimeout(callback, 1000/60); 
+    }    
+
+    function checkPageMoved(){
+        if(window.document.scrollingElement.scrollTop > (window.screen.height/2.5)){
+            to_top_btn.style.display = 'flex'
+        } else {
+            to_top_btn.style.display = '';
+        }
+
+        pageMoved(checkPageMoved);
+    }
+
+    checkPageMoved(); 
+
     addQuizResults(modified_json); 
 });
 
