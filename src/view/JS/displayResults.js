@@ -14,7 +14,7 @@ let preview_wrapper;
 let finishedLetters = 97; 
 const modified_json = JSON.parse(localStorage.getItem('modified_quiz_json')) || []; 
 let to_top_btn;
-let header; 
+let main_header; 
 
 document.addEventListener('DOMContentLoaded', () => {
     collectResultElements();
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(to_top_btn){
         to_top_btn.addEventListener('click', () => {
-            header.scrollIntoView(); 
+            main_header.scrollIntoView(); 
         });
     }
 
