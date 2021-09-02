@@ -14,6 +14,7 @@ let preview_wrapper;
 let finishedLetters = 97; 
 const modified_json = JSON.parse(localStorage.getItem('modified_quiz_json')) || []; 
 let to_top_btn;
+let header; 
 
 document.addEventListener('DOMContentLoaded', () => {
     collectResultElements();
@@ -44,6 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if(to_top_btn){
+        to_top_btn.addEventListener('click', () => {
+
+        });
+    }
+
     addQuizResults(modified_json); 
 });
 
@@ -62,6 +69,7 @@ function collectResultElements(){
     preview_section = document.querySelector('.preview_results');
     preview_wrapper = document.querySelector('.preview__wrapper');
     to_top_btn = document.querySelector('#to_top_btn'); 
+    header = document.querySelector('.header'); 
 }
 
 function displayResults(){
