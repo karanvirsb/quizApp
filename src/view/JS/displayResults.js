@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }    
 
     function checkPageMoved(){
-        if(window.document.scrollingElement.scrollTop > (window.screen.height/2.5)){
+        if(window.scrollY > (window.screen.height/2.5)){
             to_top_btn.style.display = 'flex'
         } else {
             to_top_btn.style.display = '';
