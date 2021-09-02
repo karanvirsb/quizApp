@@ -34,6 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    if(hide_results_btn){
+        hide_results_btn.addEventListener('click', () => {
+            preview_section.style.display = '';
+            hide_results_btn.style.display = ''; 
+            view_results_btn.style.display = '';
+        });
+    }
+
     addQuizResults(modified_json); 
 });
 
