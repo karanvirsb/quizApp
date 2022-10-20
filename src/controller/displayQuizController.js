@@ -40,7 +40,7 @@ document.addEventListener(
         if (quit_btn) {
             quit_btn.addEventListener("click", () => {
                 if (confirm("Are you sure you want to quit?")) {
-                    location.replace("/src/index.html");
+                    location.replace("../../index.html");
                 }
             });
         }
