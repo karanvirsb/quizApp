@@ -2,6 +2,8 @@
 
 A quiz app that allows user to test themselves with a wide variety of quizzes.
 
+Can be accessed [here](https://dev-kb-quizbee.netlify.app/)
+
 ## Run Locally 
 
 Clone the project <br/>
