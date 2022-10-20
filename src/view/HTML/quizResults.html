@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Results</title>
-    <!-- links -->
-    <link rel="stylesheet" href="../CSS/index.css" />
-    <link rel="stylesheet" href="../CSS/section/header.css" />
-    <link rel="stylesheet" href="../CSS/components/buttons.css"/>
-    <link rel="stylesheet" href="../CSS/section/result.css">
-    <link rel="stylesheet" href="../CSS/section/previewResults.css">
-    <!-- scripts -->
-    <script defer src="https://kit.fontawesome.com/267e7db5be.js" crossorigin="anonymous"></script>
-    <script defer src="../JS/index.js"></script>
-    <script defer src="../JS/displayResults.js"></script>
-    <script defer src="../../model/gifData.js"></script>
-    <script defer src="../../controller/restartQuizController.js"></script>
-  </head>
-  <body>
-    <header class="header header--dark header--light flex f-sb f-ac">
-      <div class="header__nav flex f-ac">
-        <h1 class="header__logo"><a href="index.html">QuizBee</a></h1>
-        <div class="header__menu flex f-c f-se f-ac">
-          <span class="menu__bar"></span>
-          <span class="menu__bar"></span>
-          <span class="menu__bar"></span>
-        </div>
-        <nav class="nav">
-          <div class="nav__links">
-            <a id="random__btn" href="">Random</a>
-            <a id="create__btn" href="">Create</a>
-            <a id="explore__btn" href="">Explore</a>
-          </div>
-        </nav>
-      </div>
-      <div class="header__account flex f-jc f-ac">
-        <i class="fas fa-user"></i>
-      </div>
-    </header>
-    <section class="result">
-      <h1 class="result__title">Results</h1>
-      <div class="result__wrapper flex f-c f-jc f-ac">
-        <div class="result__container">
-          <div class="result__header">
-            <p class="result__stat">
-              <span class="correct"></span> out of
-              <span class="total"></span>
-            </p>
-          </div>
-          <div class="result__body flex f-c f-jc">
-            <div class="progress flex f-c f-ac f-jc">
-              <p class="progress__percent"></p>
-              <progress class="progress__bar" value="0" max="100"></progress>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Results</title>
+        <!-- links -->
+        <link rel="stylesheet" href="../CSS/index.css" />
+        <link rel="stylesheet" href="../CSS/section/header.css" />
+        <link rel="stylesheet" href="../CSS/components/buttons.css" />
+        <link rel="stylesheet" href="../CSS/section/result.css" />
+        <link rel="stylesheet" href="../CSS/section/previewResults.css" />
+        <!-- scripts -->
+        <script
+            defer
+            src="https://kit.fontawesome.com/267e7db5be.js"
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="../JS/index.js"></script>
+        <script defer src="../JS/displayResults.js"></script>
+        <script defer src="../../model/gifData.js"></script>
+        <script defer src="../../controller/restartQuizController.js"></script>
+    </head>
+    <body>
+        <header class="header header--dark header--light flex f-sb f-ac">
+            <div class="header__nav flex f-ac">
+                <h1 class="header__logo">
+                    <a href="/src/index.html">QuizBee</a>
+                </h1>
+                <div class="header__menu flex f-c f-se f-ac">
+                    <span class="menu__bar"></span>
+                    <span class="menu__bar"></span>
+                    <span class="menu__bar"></span>
+                </div>
+                <nav class="nav">
+                    <div class="nav__links">
+                        <a id="random__btn" href="">Random</a>
+                        <a id="create__btn" href="">Create</a>
+                        <a id="explore__btn" href="">Explore</a>
+                    </div>
+                </nav>
             </div>
-            <p class="result__quote">Lorem ipsum dolor sit amet consectetur.</p>
-            <img class="gif_generator">
-          </div>
-          <div class="result__footer flex f-ac f-jc">
-              <button id="restart_quiz_btn">Restart</button>
-              <button id="view_results_btn">View Results</button>
-              <button id="hide_results_btn">Hide Results</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="results" class="preview_results">
-      <hr class="preview__hr">
-      <div class="preview__container flex f-c f-ac f-jc"> 
-        <div class="preview__wrapper flex f-c f-jc f-ac">
-          <!-- <div class="preview__quiz">
+            <div class="header__account flex f-jc f-ac">
+                <i class="fas fa-user"></i>
+            </div>
+        </header>
+        <section class="result">
+            <h1 class="result__title">Results</h1>
+            <div class="result__wrapper flex f-c f-jc f-ac">
+                <div class="result__container">
+                    <div class="result__header">
+                        <p class="result__stat">
+                            <span class="correct"></span> out of
+                            <span class="total"></span>
+                        </p>
+                    </div>
+                    <div class="result__body flex f-c f-jc">
+                        <div class="progress flex f-c f-ac f-jc">
+                            <p class="progress__percent"></p>
+                            <progress
+                                class="progress__bar"
+                                value="0"
+                                max="100"
+                            ></progress>
+                        </div>
+                        <p class="result__quote">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <img class="gif_generator" />
+                    </div>
+                    <div class="result__footer flex f-ac f-jc">
+                        <button id="restart_quiz_btn">Restart</button>
+                        <button id="view_results_btn">View Results</button>
+                        <button id="hide_results_btn">Hide Results</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="results" class="preview_results">
+            <hr class="preview__hr" />
+            <div class="preview__container flex f-c f-ac f-jc">
+                <div class="preview__wrapper flex f-c f-jc f-ac">
+                    <!-- <div class="preview__quiz">
           <p class="question"><span>Question:</span> Lorem, ipsum dolor.</p>
             <div class="options__container">
               <div class="finished__option correct">
@@ -83,11 +95,11 @@
               <p class="is__correct">Answer: Lorem ipsum dolor sit amet.</p>
             </div>
           </div> -->
+                </div>
+            </div>
+        </section>
+        <div id="to_top_btn" class="flex f-jc f-ac">
+            <p>&#8593;</p>
         </div>
-      </div>
-    </section>
-    <div id="to_top_btn" class="flex f-jc f-ac">
-      <p>&#8593;</p>
-    </div>
-  </body>
+    </body>
 </html>
