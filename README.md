@@ -28,31 +28,31 @@ Open up the index.html and begin quizzing
 
 # How To
 
-# Start a Quiz
+## Start a Quiz
 - Either use the random button on the navigation bar at the top
 - Use the number of questions, difficulty, category and type to choose a customized quiz and press begin
 - You can use the explore tab at teh bottom
 
-# Play a quiz
+## Play a quiz
 - Quiz will display and just pick an answer and click next
 
-# See Results
+## See Results
 - once quiz is done user can see results by clicking on results
 
-## User Stories
+# User Stories
 - User can play a random quiz
 - User can play a customized quiz
 - User can see results of quiz
 - User can retry a quiz
 
-## Tech Stack
+# Tech Stack
 **Front-End:** HTML, CSS, JS <br/>
 
-## Features
+# Features
 - Randomized quiz
 - custom quiz
 
-## Features being worked on 
+# Features being worked on 
 [ ] upating to react <br/>
 [ ] adding database to store quiz results <br />
 
