@@ -60,13 +60,17 @@ Open up the index.html and begin quizzing
 # How it looks
 
 ## Home Page 
-![Home Page](https://github.com/karanvirsb/quizApp/tree/master/src/Assets/home_page.jped)
+
+![Home Page](https://github.com/karanvirsb/quizApp/blob/master/src/Assets/home_page.jpeg)
 
 ## Quiz Page
-![Quiz Page](https://github.com/karanvirsb/quizApp/tree/master/src/Assets/quiz_page.jpeg)
+
+![Quiz Page](https://github.com/karanvirsb/quizApp/blob/master/src/Assets/quiz_page.jpeg)
 
 ## Results Page
-![Quiz Page](https://github.com/karanvirsb/quizApp/tree/master/src/Assets/results_page.jpeg)
+
+![Quiz Page](https://github.com/karanvirsb/quizApp/blob/master/src/Assets/results_page.jpeg)
 
 ## Results
-![Quiz Page](https://github.com/karanvirsb/quizApp/tree/master/src/Assets/results.jpeg)
+
+![Quiz Page](https://github.com/karanvirsb/quizApp/blob/master/src/Assets/results.jpeg)
