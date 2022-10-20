@@ -14,41 +14,59 @@ Also Clone the backend [here](https://github.com/karanvirsb/bug_tracker_server) 
 To begin cloning
 
 ```bash
-  
+  git clone https://github.com/karanvirsb/quizApp.git
 ```
 
 Go to the project directory
 
 ``` bash
-  
+   cd quizApp/src
 ```
 
-Install dependencies
+Open up the index.html and begin quizzing
 
-```bash
- 
-```
-
-Start the server 
-
-```bash
-  
-```
-
-Go to http://localhost:3000 in your browser and ... <br/>
 
 # How To
 
+# Start a Quiz
+- Either use the random button on the navigation bar at the top
+- Use the number of questions, difficulty, category and type to choose a customized quiz and press begin
+- You can use the explore tab at teh bottom
+
+# Play a quiz
+- Quiz will display and just pick an answer and click next
+
+# See Results
+- once quiz is done user can see results by clicking on results
+
 ## User Stories
+- User can play a random quiz
+- User can play a customized quiz
+- User can see results of quiz
+- User can retry a quiz
 
 ## Tech Stack
-**Front-End:**  <br/>
-**Back-End:**
+**Front-End:** HTML, CSS, JS <br/>
 
 ## Features
+- Randomized quiz
+- custom quiz
 
 ## Features being worked on 
-[x] <br/>
+[ ] upating to react <br/>
+[ ] adding database to store quiz results <br />
 
 
 # How it looks
+
+## Home Page 
+![Home Page](https://github.com/karanvirsb/quizApp/tree/master/src/Assets/home_page.jped)
+
+## Quiz Page
+![Quiz Page](https://github.com/karanvirsb/quizApp/tree/master/src/Assets/quiz_page.jpeg)
+
+## Results Page
+![Quiz Page](https://github.com/karanvirsb/quizApp/tree/master/src/Assets/results_page.jpeg)
+
+## Results
+![Quiz Page](https://github.com/karanvirsb/quizApp/tree/master/src/Assets/results.jpeg)
